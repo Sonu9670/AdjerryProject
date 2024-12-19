@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./ProjectCard.css";
-import Profile from "./images/profile-picture.webp";
 import Like from "./images/like.png";
 import Comment from "./images/comment.png";
 import Share from "./images/share.png";
@@ -19,13 +18,17 @@ const ProjectCard = () => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [error, setError] = useState(null);
+  const [decodedToken, setDecodedToken] = useState(null); 
 
-  const token = localStorage.getItem("token");
-  if (!token) {
-    setError("Authentication token is missing");
-    return;
-  }
-  const decodedToken = JSON.parse(atob(token.split(".")[1]));
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setError("Authentication token is missing");
+      return;
+    }
+    const decoded = JSON.parse(atob(token.split(".")[1]));
+    setDecodedToken(decoded);
+  }, []);
 
   const handleFileChange = (event) => {
     setFiles([...event.target.files]);
@@ -93,7 +96,7 @@ const ProjectCard = () => {
         {/* Input Section */}
         <div className="message-container-new">
           <Link to="/editprofile" className="profile-container-new">
-            <img src={decodedToken.profile} alt="Profile Picture" className="profile-pic-new" />
+            <img src={decodedToken?.profile || '/images/user.jpg'} alt="Profile Picture" className="profile-pic-new" />
             <div className="camera-icon-new">
               <img src={Camera} alt="Camera Icon" />
             </div>
