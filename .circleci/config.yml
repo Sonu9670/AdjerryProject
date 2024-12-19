@@ -51,11 +51,11 @@ workflows:
           filters:
             branches:
               only:
-                - release
+                - main
       - deploy:
           requires:
             - build
           filters:
             branches:
               only:
-                - release
+                - main
