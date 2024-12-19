@@ -1,0 +1,176 @@
+/* General Reset */
+
+.wallet-management-sec-0 {
+  margin:  0px 20px;
+ }
+   .wallet-management-sec
+   {
+     display: flex;
+   }
+   /* Top Bar */
+   .top-bar-sec {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 20px;
+     flex-direction: column;
+   }
+   .top-in-bar-sec{
+     display: flex;
+     flex-direction: row;
+     gap: 500px;
+   }
+   
+   .wallet-search-bar-sec {
+     display: flex;
+     align-items: center;
+     padding: 8px 12px;
+     border: 1px solid black;
+     border-radius: 20px;
+    
+   }
+   
+   .wallet-search-bar-sec input {
+     border: none;
+     outline: none;
+     width: 90%;
+     font-size: 14px;
+   }
+   .filter-btn-sec, .statement-btn-sec {
+     padding: 8px 12px;
+     background-color: #fff;
+     color: black;
+     border: 2px solid black;
+     border-radius: 10px;
+     cursor: pointer;
+     margin: 5px;
+    
+   }
+   
+   /* Project Section */
+   .project-container-sec {
+     flex:1.7;
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 20px;
+     width: 50%;
+ 
+   }
+   
+   .project-header-sec, .transaction-header-sec {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     background-color: rgb(236, 242, 245);
+     display: flex;
+     justify-content: space-around;
+     font-weight: bold;
+     margin-bottom: 10px;  
+   }
+   
+   
+   .project-card-sec {
+     display: flex;
+     align-items: center;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     padding: 10px;
+    
+   }
+   .project-card-sec .amount-sec{
+     margin: 0px 50px;
+ 
+ }
+ .project-card-sec .status-1{
+   margin: 0 0 0 150px ;
+ }
+   
+   .project-details-sec {
+     width: 47%;
+     display: flex;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     gap: 10px;
+   }
+   
+   .project-img-sec {
+     width: 100px;
+     height: 100px;
+     border-radius: 5px;
+     background-color: #ddd;
+   }
+   .view-post-btn-sec{
+     border: none;
+     background-color: #fff;
+     color: black;
+     float: right;
+     border: 1px solid black;
+     border-radius: 5%;
+     margin: 10px;
+     padding: 2px;
+ 
+   }
+   .status-sec{
+     display: flex;
+     flex-direction: row;
+     gap:10px;
+ }
+   .amount-sec {
+     font-weight: bold;
+   }
+   
+   .status-sec {
+     font-weight: bold;
+   }
+   
+   .completed { color: green; }
+   .pending { color: orange; }
+   .success { color: green; }
+   .cancel { color: red; }
+   
+   /* Sidebar */
+   .sidebar-sec {
+     flex: 1;
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 20px;
+   }
+   
+   .withdraw-btn-sec {
+     width: 50%;
+     padding: 10px;
+     background-color: #008f4e;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: bold;
+   }
+   
+   .balance-sec {
+     width: 70% ;
+     display: flex;
+     gap: 100px;
+     margin: 20px 0;
+     border: 2px solid black;
+     border-radius: 5px;
+     padding: 25px;
+   }
+   
+   .transaction-history-sec input {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+   }
+   
+   .transaction-row-sec {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 8px;
+   }
+   .trans-row-sec{
+     padding: 10px;
+     border: 2px solid #ddd;
+     border-radius: 5px;
+   }

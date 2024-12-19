@@ -1,0 +1,53 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  background-color: #ffffff;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px;
+  gap: 20px;
+  padding: 25px;
+}
+h1 {
+  padding: 5px 100px;
+}
+.input {
+  width: 100%;
+  border: 1px solid #706d6d;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.my-id {
+  width: 40%;
+}
+.one {
+  width: 40%;
+  display: inline-block;
+  background-color: black;
+}
+.one>img{
+  width: 100%;
+}
+input:focus{
+  outline: none;
+}
+.send {
+  width: 100%;
+  background-color: rgba(77, 228, 255, 0.381);
+  color: black;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
