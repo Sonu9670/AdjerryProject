@@ -5,6 +5,7 @@ import './Signup.css'
 
 function Signup() {
     const { type } = useParams();
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         first_name: '',
