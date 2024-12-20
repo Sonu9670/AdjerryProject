@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { NavLink , useParams } from "react-router-dom";
+import { NavLink , useParams , useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Signup.css'
 
@@ -39,6 +39,7 @@ function Signup() {
             const response = await axios.post('/api/createUser', formData);
             if (response.status === 201) {
                 alert('User created successfully!');
+                navigate('/login');
             }
         } catch (error) {
             console.error('Error creating user:', error);
