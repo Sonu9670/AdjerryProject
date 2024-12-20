@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './images/image.png';
+import logo from './images/ADJERRY SVG LOGO.png';
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
         
-          <div className="col-md-2 mb-4">
+          <div className="col-md-1 mb-4">
             <img src={logo} alt="Logo" className="img-fluid mb-3" />
           </div>
 
