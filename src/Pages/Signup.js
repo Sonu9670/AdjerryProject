@@ -2,6 +2,8 @@ import { React, useState } from 'react'
 import { NavLink , useParams , useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Signup.css'
+import Logo from "./ADJERRY SVG LOGO.png"
+
 
 function Signup() {
     const { type } = useParams();
@@ -49,9 +51,10 @@ function Signup() {
     };
 
     return (
-        <div className="signup-container">
+        <div className="signup-container-96">
+          <div className="signup-container">
             <div className="logo-container">
-                <img src="https://static.vecteezy.com/system/resources/previews/000/390/524/original/modern-company-logo-design-vector.jpg" alt="Company Logo" className="logo" />
+                <img src={Logo} alt="Company Logo" className="logo" />
             </div>
             <div class="text">
                 <h1> <span>Hello!</span> It's good to meet you</h1>
@@ -103,10 +106,15 @@ function Signup() {
                         </div>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
-                <p>Don't have an account? <NavLink to="/login">Log in</NavLink></p>
+                <span className="submitsec">
+                   <button type="submit">Create Account</button>
+                <p>Don't have an account? <NavLink to="/login">Log in</NavLink></p> 
+                </span>
+                
             </form>
+        </div>   
         </div>
+       
 
     )
 }

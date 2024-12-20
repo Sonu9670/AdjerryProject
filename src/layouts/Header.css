@@ -6,6 +6,9 @@
     margin: 0 auto;
     border-radius: 10px;
     position: sticky;
+    background: linear-gradient(90deg, #1E1E50, #2C2C54);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -18,4 +21,30 @@
 }
 
 
+.nav-link{
+    color: whitesmoke; /* Default color */
+    text-decoration: none; /* Removes underline for links */
+    transition: color 0.3s; /* Smooth transition for color changes */
+}
+.nav-link:visited {
+    color: whitesmoke; /* Ensures visited links stay the same color */
+}
+.nav-link:active {
+    color: whitesmoke; /* Keeps color consistent when clicked */
+}
 
+.nav-link:hover {
+    color:#FFC107; 
+}
+
+
+
+
+.btn{
+background-color: #D32F2F; 
+color: white;
+}
+.btn:hover {
+     background-color:rgb(229, 119, 119);
+    /* Matching deeper blue */
+  }
