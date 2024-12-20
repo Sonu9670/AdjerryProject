@@ -7,7 +7,7 @@ on:
 env:
   EC2_HOST: 13.126.127.43                 # Replace with your EC2 instance's public IP
   EC2_USER: ubuntu                        # Replace with your EC2 instance's user (default is `ubuntu`)
-  APP_NAME: adjerryproject                   # Replace with your app name
+  APP_NAME: adjerryproject               
 
 jobs:
   deploy:
