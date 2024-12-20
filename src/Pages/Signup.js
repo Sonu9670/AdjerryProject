@@ -60,13 +60,13 @@ function Signup() {
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>First Name </label>
-                            <input type="text" class="form-control" value={formData.first_name} onChange={handleChange} required/>
+                            <input type="text" class="form-control" name="first_name"  value={formData.first_name} onChange={handleChange} required/>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" class="form-control" value={formData.last_name} onChange={handleChange}  required />
+                            <input type="text" class="form-control" name="last_name"  value={formData.last_name} onChange={handleChange}  required />
                         </div>
                     </div>
                 </div>
@@ -74,14 +74,13 @@ function Signup() {
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>Phone No. </label>
-                            <input type="text" class="form-control"  value={formData.phone}
-                            onChange={handleChange} required/>
+                            <input type="text" class="form-control" name="phone"  value={formData.phone} onChange={handleChange} required/>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="text" class="form-control" value={formData.email}
+                            <input type="text" class="form-control" name="email" value={formData.email}
                             onChange={handleChange}  required />
                         </div>
                     </div>
@@ -90,14 +89,14 @@ function Signup() {
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>Password </label>
-                            <input type="text" class="form-control"  value={formData.password}
+                            <input type="text" class="form-control" name="password" value={formData.password}
                             onChange={handleChange} required/>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="text" class="form-control"  value={formData.confirmPassword}
+                            <input type="text" class="form-control" name="confirmPassword" value={formData.confirmPassword}
                             onChange={handleChange}  required />
                         </div>
                     </div>
