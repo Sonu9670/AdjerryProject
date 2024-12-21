@@ -49,6 +49,7 @@
 
 .requirement-details-33 h2 {
   margin: 0 0 10px 0;
+  color: #d32f2f;
 }
 
 .requirement-details-33 .user-info-33 {
@@ -68,18 +69,18 @@
   cursor: pointer;
 }
 
-.requirement-details-33 .approved-33 {
+/* .requirement-details-33 .approved-33 {
   background-color: green;
   color: white;
-}
+} */
 
-.requirement-details-33 .chat-33 {
-  background-color: blue;
-  color: white;
-}
+ .requirement-details-33 .chat-33 {
+ width: auto;
+} 
 
 .advertisement-categories-33 h2 {
   margin: 20px 0;
+  color: #d32f2f;
 }
 
 .category-33 {
@@ -172,11 +173,10 @@
 }
 
 .approved-333 {
+  width: auto;
   position: fixed; /* Keeps the button in a constant position */
   right: 20px; /* Distance from the right side of the screen */
   bottom: 20px; /* Distance from the bottom of the screen */
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text color */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px 20px; /* Padding for the button */
@@ -187,7 +187,7 @@
 }
 
 .approved-333:hover {
-  background-color: #45a049; /* Slightly darker green on hover */
+  background-color: #d32f2f; /* Slightly darker green on hover */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
 }
 
@@ -197,7 +197,7 @@
 .counter-container-11 {
   display: inline-flex;
   align-items: center;
-  border: 2px solid #00a8e1;
+  border: 2px solid #d32f2f;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 18px;

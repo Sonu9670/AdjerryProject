@@ -52,6 +52,7 @@
 .ad-details-20 h2 {
   font-size: 18px;
   margin-bottom: 16px;
+  color: #d32f2f;
 }
 
 .quantity-control-20 {
@@ -64,7 +65,7 @@
 
 .quantity-control-020 {
   align-items: center;
-  border: 2px solid #00a8e1;
+  border: 2px solid #d32f2f;
   border-radius: 5px;
   display: inline-flex;
   font-family: Arial, sans-serif;
@@ -166,7 +167,7 @@
   font-size: 12px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff;
+  background-color: #d32f2f;
   border-radius: 4px;
   margin-left: 8px;
 }
@@ -188,7 +189,7 @@
 }
 
 .delivery-card-200 .change-link-200 a {
-  color: #007bff;
+  color: #d32f2f;
   text-decoration: none;
   font-size: 14px;
 }
@@ -233,15 +234,14 @@
 
 .checkout-card-30 .discount-section-30 button {
   padding: 8px 16px;
-  background-color: #229a82;
-  color: #fff;
+  width: auto;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .checkout-card-30 .discount-section-30 button:hover {
-  background-color: #00b39b;
+  background-color: #d32f2f;
 }
 
 .checkout-card-30 .summary-30 {
@@ -264,7 +264,7 @@
 .checkout-card-30 .savings-30 {
   margin-top: 16px;
   font-size: 14px;
-  color: #28a745;
+  color: #d32f2f;
   font-weight: bold;
   text-align: center;
 }
@@ -283,8 +283,7 @@
 .checkout-card-30 .pay-button-30 {
   margin: 20px 100px;
   padding: 12px;
-  background-color: #157a77;
-  color: #fff;
+  background-color: #d32f2f;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -297,7 +296,7 @@
 }
 
 .checkout-card-30 .pay-button-30:hover {
-  background-color: #00b3b3;
+  background-color: #d32f2f;
 }
 
 .checkout-card-30 .footer-30 {
