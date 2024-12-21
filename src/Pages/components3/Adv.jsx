@@ -3,6 +3,10 @@ import { Link,useNavigate } from 'react-router-dom';
 import './adv.css'; 
 import axios from 'axios';
 import UploadDesign from "./Image upload-bro 1.png"
+import wallet from "./image 10.png";
+import design from "./imagea.png"
+import post from "./imagep.png"
+import object from "./Objects.png"
 
 
 const Adv = () => {
@@ -77,12 +81,11 @@ const Adv = () => {
           <div className="modal-body-000">
 
             <div className="image-container-000">
-            {image ? <img src={URL.createObjectURL(image)} alt='' style={{ width: "50px" }} /> : <img src={UploadDesign} alt="" />}
+            {image ? <img src={URL.createObjectURL(image)} alt=''/> : <img src={UploadDesign} alt="" />}
                     <input
                       type="file"
                       ref={inputRef}
                       onChange={handleImageChange}
-                      style={{ display: "none" }}
                     />
 
             </div>
@@ -111,7 +114,7 @@ const Adv = () => {
               <div className="p-3 scard border round">
                 <div className='d-flex justify-content-between'>
                 <h3>Wallet</h3>
-                <img src='image 10.png'/>
+                <img src={wallet}/>
                 </div>
                 <div className='d-flex justify-content-start text-left scard-line'>
                   A detailed overview of the budget allocation and transaction history.
@@ -122,7 +125,7 @@ const Adv = () => {
               <div className="p-3 scard border round">
               <div className='d-flex justify-content-between'>
                 <h3>Design Selection</h3>
-                <img src='imagea.png'/>
+                <img src={design}/>
               </div>
               <div className='d-flex justify-content-start text-left scard-line'>
                   A gallery to view and select designs submitted by designers.
@@ -133,7 +136,7 @@ const Adv = () => {
               <div className="p-3 scard border round">
               <div className='d-flex justify-content-between'>
                 <h3>Post Management</h3>
-                <img src='imagep.png'/>
+                <img src={post}/>
               </div>
               <div className='d-flex justify-content-start text-left scard-line'>
                   Tools to create, edit, and delete posts.
@@ -145,17 +148,17 @@ const Adv = () => {
           <div className="row mb-5">
             <div className="col-md-8 text-center">
               <div className='head text-dark text-left mt-4'>
-              Post your <span className="text-info">advertisement</span> requirements
+              Post your <span className="text-infooo">advertisement</span> requirements
               </div>
               <p className="lead text-left text-dark">
               Unlock access to 10,000+ designers for hire with Dribbble, the largest platform of designers online. Simplify your hiring process today and never have to worry about where to hire top design talent again
               </p>
               <div className='text-left '>
-              <button className="btn btn-info text-white mt-4 " onClick={closeModal}>Upload Design</button>
+              <button className="bbttn" onClick={closeModal}>Upload Design</button>
               </div>
             </div>
             <div className="col-md-4 text-center">
-              <img src="Objects.png" alt="Cup Design" className="img-fluid" />
+              <img src={object} alt="Cup Design" className="img-fluid" />
             </div>
           </div>
         </div>

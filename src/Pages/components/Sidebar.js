@@ -47,13 +47,12 @@ function Sidebar() {
       <div className="sidebar-image">
         <img
           src={Experience}
-          style={{ height: "auto", width: "100%" }}
           alt="Experience"
         />
       </div>
       <div className="user-card">
-        <img src="./" alt="Profile Picture" />
-        <div className="user-name">hi</div>
+        <img src={Profile} alt="Profile Picture" />
+        <div className="user-name">Mickelson Klus</div>
         <button className="user-button">Business Profile</button>
       </div>
     </div>

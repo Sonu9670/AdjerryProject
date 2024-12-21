@@ -34,7 +34,7 @@
   padding: 20px;
   text-align: center;
   border-radius: 15px;
-  background: linear-gradient(to right, #1ac9f0, #9645ec);
+  background: linear-gradient(to top ,#d04848,#d04848);
   color: white;
   width: 200px;
   height: 220px;
@@ -74,4 +74,9 @@
 .sidebar-image img,
 .sidebar-group img {
   width: 100%;
+}
+
+.sidebar-image{
+  height:auto;
+   width: 100%;
 }

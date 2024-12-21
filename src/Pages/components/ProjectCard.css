@@ -34,7 +34,9 @@
   align-items: center;
   gap: 15px;
 }
-
+.message-container-new textarea{
+ width: 100%;
+}
 .profile-container-new {
   position: relative;
   width: 70px;
@@ -118,7 +120,9 @@
   font-size: 14px;
   color: #777;
 }
-
+.engagement-new input{
+  display: none;
+}
 .engagement-new .like-new,
 .engagement-new .comment-new,
 .engagement-new .share-new,
@@ -153,7 +157,7 @@
 }
 
 .pagination button {
-  background-color: #458382;
+  
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -165,11 +169,11 @@
 }
 
 .pagination button:hover {
-  background-color: #356b69;
+  background-color: #c06d6d;
 }
 
 .pagination button:disabled {
-  background-color: #ccc;
+  background-color: #5b5757;
   cursor: not-allowed;
 }
 
@@ -182,8 +186,8 @@
 
 
 .view-button-view {
-  background-color: #f0f0f0;
-  color: #333;
+
+  color:white;
   padding: 8px 15px;
   font-size: 14px;
   border: 2px solid #458382;
@@ -192,5 +196,5 @@
   transition: background-color 0.3s ease;
 }
 .view-button-view:hover {
-  background-color: #00998f;
+  background-color: #d0a3a3;
 }

@@ -8,6 +8,7 @@ import Photo from "./images/photo.png";
 import Video from "./images/video.png";
 import Event from "./images/event.png";
 import Camera from "./images/camera.png";
+import Profile from "./images/profile-picture.webp"
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -96,14 +97,13 @@ const ProjectCard = () => {
         {/* Input Section */}
         <div className="message-container-new">
           <Link to="/editprofile" className="profile-container-new">
-            <img src={decodedToken?.profile || '/images/user.jpg'} alt="Profile Picture" className="profile-pic-new" />
+            <img src={decodedToken?.profile || {Profile}} alt="Profile Picture" className="profile-pic-new" />
             <div className="camera-icon-new">
               <img src={Camera} alt="Camera Icon" />
             </div>
           </Link>
           <textarea
             className="message-text-new cardin"
-            style={{ width: "100%" }}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
@@ -117,7 +117,6 @@ const ProjectCard = () => {
               id="inputImage"
               accept="image/*"
               name="images[]"
-              style={{ display: "none" }}
               multiple
               onChange={handleFileChange}
               required
