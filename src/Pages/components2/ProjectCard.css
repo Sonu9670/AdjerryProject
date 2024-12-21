@@ -10,6 +10,7 @@
  scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #999 #e5e5e5;
 }
+
 .project-card0::-webkit-scrollbar {
   width: 8px;
 }
@@ -66,16 +67,16 @@
   transition: background-color 0.3s ease;
 }
 .submit-button {
-  background-color: #0b9896;
+  background-color:  #D32F2F;
   color: white;
   border: none;
 }
 .view-button {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color:  #D32F2F;
+  color: white;
   padding: 8px 15px;
   font-size: 14px;
-  border: 2px solid #458382;
+  border: 2px solid #D32F2F;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
