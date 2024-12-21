@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './Assests/ADJERRY SVG LOGO.png';
+import logo from './Assests/ADJERRY LOGO.png';
 
 const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./Invoicepage.css";
-import Logo from './Assests/ADJERRY SVG LOGO.png';
+import Logo from './Assests/ADJERRY LOGO.png';
 import invoicepic from './Assests/image 2.png'
 import axios from "axios";
 
