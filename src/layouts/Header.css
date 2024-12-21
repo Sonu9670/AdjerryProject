@@ -6,7 +6,7 @@
     margin: 0 auto;
     border-radius: 10px;
     position: sticky;
-    background: linear-gradient(90deg, #1E1E50, #2C2C54);
+    background: black;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
