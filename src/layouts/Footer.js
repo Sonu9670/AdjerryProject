@@ -9,10 +9,8 @@ const Footer = () => {
         
           <div className="col-md-1 mb-4">
             <img src={logo} alt="Logo" className="img-fluid mb-3" />
-          </div>
-
-       
-          <div className="col-md-2 mb-4">
+          </div>       
+          <div className="col-md-3 mb-4">
             <h4 className="text-secondary mb-3">PRODUCT</h4>
             <ul className="list-unstyled">
               <li><a href="#" className="text-muted text-decoration-none">Pricing</a></li>
@@ -21,10 +19,8 @@ const Footer = () => {
               <li><a href="#" className="text-muted text-decoration-none">Accessibility</a></li>
               <li><a href="#" className="text-muted text-decoration-none">Five</a></li>
             </ul>
-          </div>
-
-        
-          <div className="col-md-2 mb-4">
+          </div>        
+          <div className="col-md-3 mb-4">
             <h4 className="text-secondary mb-3">SOLUTION</h4>
             <ul className="list-unstyled">
               <li><a href="#" className="text-muted text-decoration-none">Brainstorming</a></li>
@@ -33,9 +29,7 @@ const Footer = () => {
               <li><a href="#" className="text-muted text-decoration-none">Research</a></li>
             </ul>
           </div>
-
-        
-          <div className="col-md-2 mb-4">
+          <div className="col-md-3 mb-4">
             <h4 className="text-secondary mb-3">RESOURCES</h4>
             <ul className="list-unstyled">
               <li><a href="#" className="text-muted text-decoration-none">Help Center</a></li>
@@ -43,8 +37,6 @@ const Footer = () => {
               <li><a href="#" className="text-muted text-decoration-none">Tutorials</a></li>
             </ul>
           </div>
-
-         
           <div className="col-md-2 mb-4">
             <h4 className="text-secondary mb-3">Company</h4>
             <ul className="list-unstyled">
