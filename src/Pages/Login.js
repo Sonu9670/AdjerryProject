@@ -52,7 +52,7 @@ const Login = () => {
                     <div className="google-login">
                         <FaGoogle size={20} />
 
-                        <p style={{ marginLeft: '10px' }}>Sign in with Google</p>
+                        <p style={{ margin: '0' }}>Sign in with Google</p>
                     </div>
                     <div className='or-divider'>
                         <span>or</span>

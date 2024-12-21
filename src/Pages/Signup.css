@@ -86,11 +86,11 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 10px 85px;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: black;
 }
 .text span{
     color: #d32f2f;

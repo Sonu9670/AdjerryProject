@@ -39,15 +39,15 @@
     width: 100%;
     justify-content: center;
     display: flex;
-    align-items: center;
     border: 1px solid rgb(230, 227, 227);
     border-radius: 8px;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 }
 
 .google-login svg {
-    fill: #4285F4;
-
-    margin-right: 5px;
+    fill: #ff0000;
 }
 
 .or-divider {
@@ -131,7 +131,6 @@ form>.form-group {
 
 .login-button {
     width: 100%;
-    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
