@@ -16,7 +16,7 @@ const Contactpage = () => {
           <br />
           <input type="text" name="Purpose" placeholder="Purpose" className="input" />
           <br />
-          <button className="send">Send</button>
+          <button>Send</button>
         </div>
         <div class="one">
           <img src={Nice}  />
