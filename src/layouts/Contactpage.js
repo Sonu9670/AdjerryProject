@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contactpage.css";
-import Nice from "./images/nice.jpg"
+import Nice from './images/contactimg.jpeg'
 
 const Contactpage = () => {
   return (

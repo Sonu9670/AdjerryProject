@@ -24,8 +24,8 @@ h1 {
   width: 100%;
   border: 1px solid #706d6d;
   font-size: 15px;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 8px;
+  margin-bottom: 9px;
   border-radius: 5px;
 }
 .my-id {
@@ -34,10 +34,13 @@ h1 {
 .one {
   width: 40%;
   display: inline-block;
-  background-color: black;
+
 }
 .one>img{
   width: 100%;
+  height: auto;
+  
+  
 }
 input:focus{
   outline: none;
