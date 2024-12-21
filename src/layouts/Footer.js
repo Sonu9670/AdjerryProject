@@ -55,7 +55,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
         
         <div className="d-flex justify-content-between mt-4">
           <p className="text-muted">&copy; 2025 Adjerry, Inc. All rights reserved. Made By SoftAir Technology</p>

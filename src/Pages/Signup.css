@@ -7,7 +7,7 @@
     background-size: cover;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 50rem;
   }
@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
 }
 .signup-container img{
     margin-top: -84px;
@@ -92,7 +93,7 @@ button:hover {
     background-color: #0056b3;
 }
 .text span{
-    color: aqua;
+    color: #d32f2f;
 }
 
 .form-group label{
