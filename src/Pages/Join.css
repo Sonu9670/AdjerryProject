@@ -1,351 +1,391 @@
+.container {
+    width: 100%;
+    height: 100%;
+    /* box-sizing: border-box; */
+}
 
-   
- .container{
-          width: 100%;
-          height: 100%;
-          /* box-sizing: border-box; */
-      }
-      .proceed_section .sec_1{
-          width: 100%;
-          height: fit-content;
-          margin-top: 100px;
-      
-      }
-     
-      .proceed_section .sec_1 ul{
-          width: 48%;
-          background-color: black;
-          border-radius: 10px;
-          display: flex;  
-      }
-      .proceed_section .sec_1 ul li{
-          
-          list-style-type: none;
-          padding: 30px 0 0 20px;
-          color: aliceblue;
-      }
-     
-      .proceed_section .sec_1 ul li:nth-child(2){
-          padding-left: 50px;
-      }
-      
-      .proceed_section .sec_1 ul li:nth-child(6){
-          margin-left: 130px;
-      }
-      
-     
-      .proceed_section .sec_1 i{
-          font-size: 50px;
-          color: #1EBEC4;
-          margin: 30px 0 0 0;
-      }
-      .proceed_section .sec_1 i:nth-child(2){
-          margin: 0 0 0 700px;
-      }
-      .proceed_section .sec_1 h1{
-          text-align: center;
-          font-size: 30px;
-         
-      }
-      
-      .proceed_section .span{
-          color: #1EBEC4;
-      }
-      
-      .proceed_section .sec-2{
-          /* width: 100%; */
-          height: fit-content;
-          display: flex;
-          margin: 20px 0 0 0;
-          justify-content: space-evenly;
-          /* cursor: pointer; */
-         
-      }
-      
-      
-      .proceed_section .sec-2 li{
-          text-transform: capitalize;
-      }
-      .proceed_section .article{
-          cursor: pointer;
-          width: 300px;
-          height: 580px;
-          border-radius: 20px;
-          box-shadow: 20px 20px 50px rgb(218, 221, 224);
-          padding-left: 20px;
-          padding-right: 20px;
-          text-wrap: wrap;
-          background-color: white;
-      }
-      .proceed_section .sec-2 h3{
-          font-size:30px ;
-          font-weight: lighter;
-          margin: -10px 0 0 0;
-          
-      }
-      /* .proceed_section .sec-2 .proceed_section .i{
+.proceed_section .sec_1 {
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+
+}
+
+.proceed_section .sec_1 ul {
+    width: 48%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+}
+
+.proceed_section .sec_1 ul li {
+
+    list-style-type: none;
+    padding: 30px 0 0 20px;
+    color: aliceblue;
+}
+
+.proceed_section .sec_1 ul li:nth-child(2) {
+    padding-left: 50px;
+}
+
+.proceed_section .sec_1 ul li:nth-child(6) {
+    margin-left: 130px;
+}
+
+
+.proceed_section .sec_1 i {
+    font-size: 50px;
+    color: #1EBEC4;
+    margin: 30px 0 0 0;
+}
+
+.proceed_section .sec_1 i:nth-child(2) {
+    margin: 0 0 0 700px;
+}
+
+.proceed_section .sec_1 h1 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.proceed_section .span {
+    color: #d32431;
+}
+
+.proceed_section .sec-2 {
+    /* width: 100%; */
+    height: fit-content;
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-evenly;
+    /* cursor: pointer; */
+
+}
+
+
+.proceed_section .sec-2 li {
+    text-transform: capitalize;
+}
+
+.proceed_section .article {
+    cursor: pointer;
+    width: 300px;
+    height: 580px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgb(218, 221, 224);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-wrap: wrap;
+    background-color: white;
+}
+
+.proceed_section .sec-2 h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: -10px 0 0 0;
+
+}
+
+/* .proceed_section .sec-2 .proceed_section .i{
           width: 100px;
           height: 50px;
           border-radius: 50%;
           background-color: #1EBEC4;
       } */
-      .proceed_section .sec-2 p{
-          margin: 10px 0 0 0;
-          color:#1EBEC4 ;
-          font-size: larger;
-      }
-      .proceed_section .sec-2 h5{
-          text-align: center;
-          font-weight: normal;
-          font-size: large;
-      }
-      .proceed_section .sec-2 button{
-          width: fit-content;
-          height: fit-content;
-          padding: 10px 30px;
-          font-size: larger;
-          background-color: rgb(27, 27, 61);
-          color:white;
-          border: none;
-          margin: 0 0 0 70px;
-          border-radius: 10px;
-      }
-      .proceed_section .article img{
-          width: 100px;
-          height: 80px;
-          margin: -30px 0 0 200px;
-      }
-      .proceed_section .img{
-          height: 100px;
-          float: right;
-      }
-      .proceed_section .sec-3{
-          width: 100%;
-          height: 600px;
-          border-radius:50px ;
-          margin: 50px auto;
-          background: linear-gradient(220.47deg, #F0AEFF -10.24%, #d9bbf2 -0.79%, #4797a8 18.61%, #54C4FF 45.99%, #2f6475 78.93%, #1CE8B5 110.94%, #19FC80 124.34%);
-      }
-      .proceed_section .circle-img{
-          float: right;
-          width: 200px;
-          height: 200px;
-          margin: -50px 0 0 0;
-      }
-      header h1{
-          font-size: 40px;
-          text-align: center;
-          margin: 20px 0 0 0;
-      }
-     
-     
-      .proceed_section .figure{
-          display: flex;
-          /* width: 100%;  */
-           height: auto;
-      }
-      .proceed_section .fig-img1{
-          margin: 30px 0 0 150px;
-          width: 200px;
-          height: 400px;
-      }
-      .proceed_section .fig-img2{
-          width: 120px;
-          height: 150px;
-          margin: 150px  0 0 -20px;
-      }
-      .proceed_section .fig-img3{
-          height: 250px;
-          margin-top: 90px;
-      }
-      .proceed_section .fig-img4{
-          height: 250px;
-          margin-top: 180px;
-          
-      }
-      .proceed_section .figcaption{
-          text-align: center;
-          margin: 70px 0 0 -40px;
-          
-      }
-      .proceed_section .figcaption h1{
-          font-size: 40px;
-          font-weight: bold;
-          color: aliceblue;
-          /* display: flex; */
-          
-      }
-      .proceed_section .h1{
-          color: black;
-          font-size: 40px;
-          font-weight: bold;
-          /* text-decoration:wavy;
+.proceed_section .sec-2 p {
+    margin: 10px 0 0 0;
+    color: #d32431;
+    font-size: larger;
+}
+
+.proceed_section .sec-2 h5 {
+    text-align: center;
+    font-weight: normal;
+    font-size: large;
+}
+
+.proceed_section .sec-2 button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    font-size: larger;
+    background-color: rgb(27, 27, 61);
+    color: white;
+    border: none;
+    margin: 0 0 0 70px;
+    border-radius: 10px;
+}
+
+.proceed_section .article img {
+    width: 100px;
+    height: 80px;
+    margin: -30px 0 0 200px;
+}
+
+.proceed_section .img {
+    height: 100px;
+    float: right;
+}
+
+.proceed_section .sec-3 {
+    width: 100%;
+    height: 600px;
+    border-radius: 50px;
+    margin: 50px auto;
+    background: linear-gradient(220.47deg, #FFEBEE -10.24%, #FCE4EC -.79%, #FFEBEE 18.61%, #B71C1C 45.99%, #E91E63 78.93%, #FFEBEE 110.94%, #F44336 124.34%);
+}
+
+.proceed_section .circle-img {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: -50px 0 0 0;
+}
+
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+
+.proceed_section .figure {
+    display: flex;
+    /* width: 100%;  */
+    height: auto;
+}
+
+.proceed_section .fig-img1 {
+    margin: 30px 0 0 150px;
+    width: 200px;
+    height: 400px;
+}
+
+.proceed_section .fig-img2 {
+    width: 120px;
+    height: 150px;
+    margin: 150px 0 0 -20px;
+}
+
+.proceed_section .fig-img3 {
+    height: 250px;
+    margin-top: 90px;
+}
+
+.proceed_section .fig-img4 {
+    height: 250px;
+    margin-top: 180px;
+
+}
+
+.proceed_section .figcaption {
+    text-align: center;
+    margin: 70px 0 0 -40px;
+
+}
+
+.proceed_section .figcaption h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    /* display: flex; */
+
+}
+
+.proceed_section .h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    /* text-decoration:wavy;
           text-decoration-line: black; */
-      }
-      .proceed_section .figcaption p{
-          color: white;
-          font-size: larger;
-          
-      }
-      .proceed_section .figcaption-box{
-          width: fit-content;
-          height: fit-content;
-          text-align: center;
-          margin: -150px 0 0 300px;
-          
-         
-      }
-      .proceed_section .figcaption-box h1{
-          font-size: 20px;
-          color: black;
-      }
-      .proceed_section .figcaption-box button{
-          width: fit-content;
-          height: fit-content;
-          padding: 10px 25px 10px 25px;
-          background-color: rgb(26, 26, 46);
-          color: aliceblue;
-         font-size: 15px;
-         border: none;
-         border-radius: 5px;
-         
-      }
-      .proceed_section .figcaption-box2{
-          width: 450px;
-          height: 250px;
-          text-align: center;
-          margin: -150px 0 0 0;
-          border: 2px solid black;
-          border-bottom: none;
-          border-top: none;
-          border-right: none;
-         margin-left: 20px;
-      
-          
-      }
-      .proceed_section .figcaption-box2 h1{
-          font-size: 30px;
-      }
-      .proceed_section .figcaption-box2 button{
-          width: fit-content;
-          height: fit-content;
-          padding: 10px 25px 10px 25px;
-          background-color: rgb(26, 26, 46);
-          color: aliceblue;
-         font-size: 15px;
-         border: none;
-         border-radius: 5px;
-      }
-      .proceed_section .pic7{
-          margin-top: -350px; 
-          position: absolute; 
-          z-index: -1; 
-          /* width: 100%; */
-      }
-      .proceed_section .pic13{
-           margin-left: 10px; 
-           height: 50px; 
-           margin-top: -10px;
-      }
-      .proceed_section .pic12{
-          margin-left: 60px;
-          height: 50px;
-      }
-      .proceed_section .pi13{
-          margin-left: 1080px; 
-          height: 80px;
-          
-      }
-      .proceed_section .pi13a{
-          margin-left: 1080px; 
-          height: 100px;
-         
-          
-      }
-      
-      .proceed_section .size{
-          font-size: 20px;
-      }
-      .proceed_section .sec-3_upper{
-          display: flex;
-      }
-      .proceed_section .sec-3_upper h1{
-          color: aliceblue;
-          font-size: 45px;
-          margin: 95px 0 0 -60px;
-      }
-      .proceed_section .span1{
-          color: black;
-      }
-      .proceed_section .sec-3_upper .text{
-          text-align: center;
-      }
-      .proceed_section .sec-3_upper p{
-          color: aliceblue;
-          font-size: larger;
-          margin: 20px;
-      }
-      .proceed_section .sec-3_upper .add_box{
-      width: fit-content;
-          height: fit-content;
-          text-align: center;
-          margin: -200px 0 0 250px;
-      }
-          
-.proceed_section .sec-3_upper .add_box button{
-                    width: fit-content;
-                    height: fit-content;
-                    padding: 10px 25px 10px 25px;
-                    background-color: rgb(26, 26, 46);
-                    color: aliceblue;
-                   font-size: 15px;
-                   border: none;
-                   border-radius: 5px;
-          }
-         
-
-.proceed_section .sec-3_upper .add_box h1{
-          font-size: 30px;
-          color: black;
-          margin-left: 3px;
 }
 
-.proceed_section .sec-3_upper .add_box .p{
-          color: black;
-          font-size: small;
-          margin: 20px 0 20px -20px;
-          
+.proceed_section .figcaption p {
+    color: white;
+    font-size: larger;
+
 }
 
-.proceed_section .sec-3_upper .add_box2{
-          width: fit-content;
-              height: fit-content;
-              text-align: center;
-              margin: -200px 0 0 40px;
-              /* border-left: 2px solid black;
+.proceed_section .figcaption-box {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: -150px 0 0 300px;
+
+
+}
+
+.proceed_section .figcaption-box h1 {
+    font-size: 20px;
+    color: black;
+}
+
+.proceed_section .figcaption-box button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(26, 26, 46);
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.proceed_section .figcaption-box2 {
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    margin: -150px 0 0 0;
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    margin-left: 20px;
+
+
+}
+
+.proceed_section .figcaption-box2 h1 {
+    font-size: 30px;
+}
+
+.proceed_section .figcaption-box2 button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(26, 26, 46);
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.proceed_section .pic7 {
+    margin-top: -350px;
+    position: absolute;
+    z-index: -1;
+    /* width: 100%; */
+}
+
+.proceed_section .pic13 {
+    margin-left: 10px;
+    height: 50px;
+    margin-top: -10px;
+}
+
+.proceed_section .pic12 {
+    margin-left: 60px;
+    height: 50px;
+}
+
+.proceed_section .pi13 {
+    margin-left: 1080px;
+    height: 80px;
+
+}
+
+.proceed_section .pi13a {
+    margin-left: 1080px;
+    height: 100px;
+
+
+}
+
+.proceed_section .size {
+    font-size: 20px;
+}
+
+.proceed_section .sec-3_upper {
+    display: flex;
+}
+
+.proceed_section .sec-3_upper h1 {
+    color: aliceblue;
+    font-size: 45px;
+    margin: 95px 0 0 -60px;
+}
+
+.proceed_section .span1 {
+    color: black;
+}
+
+.proceed_section .sec-3_upper .text {
+    text-align: center;
+}
+
+.proceed_section .sec-3_upper p {
+    color: aliceblue;
+    font-size: larger;
+    margin: 20px;
+}
+
+.proceed_section .sec-3_upper .add_box {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: -200px 0 0 250px;
+}
+
+.proceed_section .sec-3_upper .add_box button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(26, 26, 46);
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.proceed_section .sec-3_upper .add_box h1 {
+    font-size: 30px;
+    color: black;
+    margin-left: 3px;
+}
+
+.proceed_section .sec-3_upper .add_box .p {
+    color: black;
+    font-size: small;
+    margin: 20px 0 20px -20px;
+
+}
+
+.proceed_section .sec-3_upper .add_box2 {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: -200px 0 0 40px;
+    /* border-left: 2px solid black;
               height: 250px; */
-              padding-left: 50px;
-              /* padding-top: -100px; */
-    
-              }
-.proceed_section .sec-3_upper .add_box2 button{
-                    width: fit-content;
-                    height: fit-content;
-                    padding: 10px 25px 10px 25px;
-                    background-color: rgb(26, 26, 46);
-                    color: aliceblue;
-                   font-size: 15px;
-                   border: none;
-                   border-radius: 5px;
-          }
-          .proceed_section .sec-3_upper .add_box2 h1{
-                    font-size: 30px;
-                    color: black;
-                    margin-left: 5px;
-          }
-          .proceed_section .sec-3_upper .add_box2 .p{
-                    color: black;
-                    font-size: small;
-                    margin: 20px 0 20px -20px;
-                    
-          }
+    padding-left: 50px;
+    /* padding-top: -100px; */
+
+}
+
+.proceed_section .sec-3_upper .add_box2 button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(26, 26, 46);
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.proceed_section .sec-3_upper .add_box2 h1 {
+    font-size: 30px;
+    color: black;
+    margin-left: 5px;
+}
+
+.proceed_section .sec-3_upper .add_box2 .p {
+    color: black;
+    font-size: small;
+    margin: 20px 0 20px -20px;
+
+}
