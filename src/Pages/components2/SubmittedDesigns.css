@@ -49,8 +49,8 @@
   }
   
   .view-button1 {
-    background-color: #f3a5a5;
-    color: white;
+    background-color: white;
+    color: #D32F2F;
     padding: 8px 15px;
     font-size: 14px;
     border: 2px solid #D32F2F;;
@@ -59,7 +59,8 @@
     transition: background-color 0.3s ease;
   }
   .view-button1:hover {
-    background-color: #D32F2F;;
+    background-color: #D32F2F;
+    color: white;
   }
   
   .view-all-link {

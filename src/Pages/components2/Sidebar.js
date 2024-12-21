@@ -8,7 +8,7 @@ import Category from "./image/Category.png"
 import Discovery from "./image/Discovery.png"
 import Experience from "./image/experience-1.jpg"
 import Profile from "./image/profile-picture.webp"
-import Group from "./image/Group.png"
+import Group from './image/Group .png'
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ function Sidebar() {
         <button className="profile-button">Designer's Profile</button>
       </div>
       <div className="group">
-        <img src={Group} style={{ marginTop: ' 600px' }} alt="Group" />
+        <img src={Group} style={{ marginTop: ' 5px' }} alt="Group" />
       </div>
     </div>
   );

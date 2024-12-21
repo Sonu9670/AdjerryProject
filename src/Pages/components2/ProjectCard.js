@@ -6,7 +6,7 @@ import Like from "./image/like.png";
 import Comment from "./image/comment.png";
 import Share from "./image/share.png";
 import Save from "./image/save.png";
-import Group1 from "./image/Group (1).png";
+import Group1 from './image/Group (1).png'
 import Photo from './image/photo.png';
 
 
