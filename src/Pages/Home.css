@@ -317,7 +317,7 @@ header h1{
  .sec-7{
     /* width: 100%; */
     height: 250px;
-    background-color:#3EA9B8;
+    background-color:#db2836;
     margin: 40px 0 0 0;
     padding-top:20px ;
     text-align: center;
@@ -409,7 +409,7 @@ footer hr{
     margin-left: 60px;
 }
 .spanhead{
-    color: #3EA9B8;
+    color: #db2836;
 }
 .distyle{
     font-size: 60px; 
