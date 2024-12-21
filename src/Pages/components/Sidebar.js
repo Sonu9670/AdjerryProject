@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 import "./Sidebar.css";
 import Graph from "./images/Graph.png";
 import Activity from "./images/Activity.png";
@@ -10,12 +10,13 @@ import Experience from "./images/experience-1.png";
 import Profile from "./images/profile-picture.webp";
 
 function Sidebar() {
-  // const token = localStorage.getItem("token");
-  // if (!token) {
-  //   setError("Authentication token is missing");
-  //   return;
-  // }
-  // const decodedToken = JSON.parse(atob(token.split(".")[1]));
+  const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  if (!token) {
+    navigate("/login");
+    return;
+  }
+  const decodedToken = JSON.parse(atob(token.split(".")[1]));
 
   return (
     <div className="menu-sidebar">
@@ -51,8 +52,8 @@ function Sidebar() {
         />
       </div>
       <div className="user-card">
-        <img src={Profile} alt="Profile Picture" />
-        <div className="user-name">Mickelson Klus</div>
+        <img src={decodedToken.profile || '/images/user.jpg'} alt="Profile Picture" />
+        <div className="user-name">{decodedToken.name || 'Adjerry User'}</div>
         <button className="user-button">Business Profile</button>
       </div>
     </div>
