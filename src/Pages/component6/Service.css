@@ -90,16 +90,16 @@ background-attachment: scroll;
 }
 
 .search-box-7851 button {
-    background-color: #086f33;
-    color: #fff;
+    width: 20%;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 20px;
 }
 .services-5340{
-    margin: 2rem 0 0 20rem;
+    margin: 2rem 0 0 40rem;
     font-size: 1.3rem;
+    color: #d32f2f;
 }  
 .services-5341{
     margin: 2rem  24rem;
@@ -154,6 +154,7 @@ background-attachment: scroll;
 }
 .services-5343{
     margin: 0 4rem;
+    color: #d32f2f;
 }
 
 .suggestion-6734 {
@@ -181,8 +182,7 @@ background-color: whitesmoke;
 }
 
 .suggestion-6734 button {
-    background-color: #08893e;
-    color: #fff;
+   
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -193,6 +193,10 @@ background-color: whitesmoke;
 
 .categories-container {
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .category-section {
@@ -202,6 +206,7 @@ background-color: whitesmoke;
   .category-title {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #d32f2f;
   }
   
   .products-grid {

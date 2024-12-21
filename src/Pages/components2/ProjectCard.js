@@ -104,7 +104,7 @@ const ProjectCard = () => {
           <div className="project-card" key={index}>
             <div className="project-header">
               <div className="profile-info">
-                <img src={Profile} alt="Profile Picture" />
+                <img src={req.user_profile} alt="Profile Picture" />
                 <div className="profile-details">
                   <div className="name">{req.first_name} {req.last_name}</div>
                   <div>Business owner of D House</div>
