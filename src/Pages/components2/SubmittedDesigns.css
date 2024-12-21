@@ -9,7 +9,7 @@
     font-size: 20px;
     font-weight: 600;
     margin: 15px aut0;
-    color: #333;
+    color: #D32F2F;
   }
   
   .design-card {
@@ -49,17 +49,17 @@
   }
   
   .view-button1 {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f3a5a5;
+    color: white;
     padding: 8px 15px;
     font-size: 14px;
-    border: 2px solid #458382;
+    border: 2px solid #D32F2F;;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   .view-button1:hover {
-    background-color: #00998f;
+    background-color: #D32F2F;;
   }
   
   .view-all-link {
@@ -69,7 +69,7 @@
   }
   
   .view-all-link a {
-    color: #00998f;
+    color: #D32F2F;
     text-decoration: none;
     font-weight: 500;
   }
