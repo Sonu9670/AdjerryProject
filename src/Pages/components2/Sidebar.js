@@ -1,6 +1,6 @@
-import React from 'react';
+import React , {useEffect , useState} from 'react';
 import './Sidebar.css';
-import { NavLink } from "react-router-dom";
+import { NavLink , useNavigate } from "react-router-dom";
 import Graph from "./image/Graph.png"
 import Activity from "./image/Activity.png"
 import Chart from "./image/Chart.png"
@@ -11,6 +11,14 @@ import Profile from "./image/profile-picture.webp"
 import Group from "./image/Group.png"
 
 function Sidebar() {
+  const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  if (!token) {
+    navigate("/login");
+    return;
+  }
+  const decodedToken = JSON.parse(atob(token.split(".")[1]));
+
   return (
     <div className="sidebar">
       <div className="sidebar-item">
@@ -37,8 +45,8 @@ function Sidebar() {
         <img src={Experience} style={{ height: 'auto', width: '100%' }} alt="Experience" />
       </div>
       <div className="profile-card">
-        <img src={Profile} alt="Profile Picture" />
-        <div className="profile-name">Mickelson Klus</div>
+        <img src={decodedToken.Profile || '/images/user.jpg'} alt="Profile Picture" />
+        <div className="profile-name">{decodedToken.name}</div>
         <button className="profile-button">Designer's Profile</button>
       </div>
       <div className="group">
