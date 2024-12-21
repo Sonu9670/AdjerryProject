@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import './Login.css';
-import loginImg from './Assests/pic.png'
+import loginImg from './Assests/login.png'
 import { FaGoogle } from "react-icons/fa";
 import { NavLink, useNavigate } from 'react-router-dom';
 
