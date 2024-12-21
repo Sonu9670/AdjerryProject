@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'; // No Router here
 
 // layout page
-import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import Header from './Pages/Header';
+import Footer from './Pages/Footer';
 
 // comman page
 import Home from './Pages/Home';
@@ -11,26 +11,25 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Join from './Pages/Join';
 import Checkout from './Pages/Checkout';
-import Contactpage from './layouts/Contactpage';
+import Contactpage from './Pages/Contactpage';
 
 
 // business user page
 import Bussiness from './Pages/Business';
 import Orders from './Pages/Orders';
-import View from "./Pages/Component5/View"
-import Productdesign from './Pages/component6/Productdesign';
-import Payment from "./Pages/component6/Payment"
-import Service from "./Pages/component6/Service"
+import View from "./Pages/View"
+import Productdesign from './Pages/Productdesign';
+import Payment from "./Pages/Payment"
+import Service from "./Pages/Service"
 
 
 
 // designer user page
 import Designerpage from "./Pages/Designer";
-import Wallet from './layouts/Wallet';
-import Adv from './Pages/components3/Adv';
-import Retailer from './Pages/Component4/Retailer';
-import EditProfile from './Pages/Component5/EditProfile';
-import Profile from './Pages/Component5/Profile/Profile';
+import Wallet from './Pages/Wallet';
+import Adv from './Pages/Adv';
+import EditProfile from './Pages/EditProfile';
+import Profile from './Pages/Profile';
 import Invoicepage from './Pages/Invoicepage';
 
 
@@ -89,7 +88,7 @@ function App() {
         
         <Route path='/editprofile' element={<ProtectedRoute element={<EditProfile />} />} />
 
-        <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer />} />} />
+      
         <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
 
         <Route path='/uploadDesign' element={<ProtectedRoute element={<Adv />} />} />

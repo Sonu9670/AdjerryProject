@@ -1,8 +1,8 @@
 import React from "react";
 import "./Designer.css";
-import Sidebar from "./components2/Sidebar";
-import ProjectCard from "./components2/ProjectCard";
-import SubmittedDesigns from "./components2/SubmittedDesigns";
+import Sidebar from "./D-component/Sidebar";
+import ProjectCard from "./D-component/ProjectCard";
+import SubmittedDesigns from "./D-component/SubmittedDesigns";
 
 const Designer = () => {
   return (

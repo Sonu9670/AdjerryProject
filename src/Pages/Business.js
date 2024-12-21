@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Business.css';
-import Sidebar from "./components/Sidebar";
-import ProjectCard from "./components/ProjectCard";
-import Top from "./components/Top";
-import SubmittedDesigns from "./components/SubmittedDesigns";
+import Sidebar from "./B-component/Sidebar";
+import ProjectCard from "./B-component/ProjectCard";
+import Top from "./B-component/Top";
+import SubmittedDesigns from "./B-component/SubmittedDesigns";
 
 const Business = () => {
     return (
