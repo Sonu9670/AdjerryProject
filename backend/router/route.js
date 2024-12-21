@@ -16,7 +16,7 @@ const axios = require('axios');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/upload')); // Set destination to public/upload
+        cb(null, path.join(__dirname, '../../public/upload')); // Set destination to public/upload
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Unique filename with timestamp
