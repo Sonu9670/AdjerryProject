@@ -11,40 +11,35 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-.navbar-brand img {
-    height: 80px;
-    margin: 0 10px;
-}
 .navbar-menu li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
-
-.nav-link{
-    color: whitesmoke; /* Default color */
-    text-decoration: none; /* Removes underline for links */
-    transition: color 0.3s; /* Smooth transition for color changes */
+.nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .nav-link:visited {
-    color: whitesmoke; /* Ensures visited links stay the same color */
+  color: whitesmoke;
 }
 .nav-link:active {
-    color: whitesmoke; /* Keeps color consistent when clicked */
+  color: whitesmoke;
 }
 
 .nav-link:hover {
-    color:#FFC107; 
+  color: #d32f2f;
 }
 
-
-
-
-.btn{
-background-color: #D32F2F; 
-color: white;
+.btn {
+  background-color: #d32f2f;
+  color: white;
 }
 .btn:hover {
-     background-color:rgb(229, 119, 119);
-    /* Matching deeper blue */
-  }
+  background-color: rgb(229, 119, 119);
+}
+
+.navbar-brand img {
+  height: 80px;
+  margin: 0 10px;
+}
