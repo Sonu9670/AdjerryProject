@@ -166,17 +166,17 @@ header h1 {
 .proceed_section .fig-img2 {
     width: 120px;
     height: 150px;
-    margin: 150px 0 0 -20px;
+    /* margin: 150px 0 0 -20px; */
 }
 
 .proceed_section .fig-img3 {
     height: 250px;
-    margin-top: 90px;
+    margin-top: 0 0 0 70px
 }
 
 .proceed_section .fig-img4 {
     height: 250px;
-    margin-top: 180px;
+    /* margin-top: 180px; */
 
 }
 
@@ -305,7 +305,7 @@ header h1 {
 .proceed_section .sec-3_upper h1 {
     color: aliceblue;
     font-size: 45px;
-    margin: 95px 0 0 -60px;
+    /* margin: 95px 0 0 -60px; */
 }
 
 .proceed_section .span1 {
@@ -322,14 +322,14 @@ header h1 {
     margin: 20px;
 }
 
-.proceed_section .sec-3_upper .add_box {
+.proceed_section .sec-3_upper_2 .add_box {
     width: fit-content;
     height: fit-content;
     text-align: center;
     margin: -200px 0 0 250px;
 }
 
-.proceed_section .sec-3_upper .add_box button {
+.proceed_section .sec-3_upper_2 .add_box button {
     width: fit-content;
     height: fit-content;
     padding: 10px 25px 10px 25px;
@@ -341,20 +341,20 @@ header h1 {
 }
 
 
-.proceed_section .sec-3_upper .add_box h1 {
+.proceed_section .sec-3_upper_2 .add_box h1 {
     font-size: 30px;
     color: black;
-    margin-left: 3px;
+    /* margin-left: 3px; */
 }
 
-.proceed_section .sec-3_upper .add_box .p {
+.proceed_section .sec-3_upper_2 .add_box .p {
     color: black;
     font-size: small;
-    margin: 20px 0 20px -20px;
+    /* margin: 20px 0 20px -20px; */
 
 }
 
-.proceed_section .sec-3_upper .add_box2 {
+.proceed_section .sec-3_upper_2 .add_box2 {
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -366,7 +366,7 @@ header h1 {
 
 }
 
-.proceed_section .sec-3_upper .add_box2 button {
+.proceed_section .sec-3_upper_2 .add_box2 button {
     width: fit-content;
     height: fit-content;
     padding: 10px 25px 10px 25px;
@@ -377,15 +377,127 @@ header h1 {
     border-radius: 5px;
 }
 
-.proceed_section .sec-3_upper .add_box2 h1 {
+.proceed_section .sec-3_upper_2 .add_box2 h1 {
     font-size: 30px;
     color: black;
     margin-left: 5px;
 }
 
-.proceed_section .sec-3_upper .add_box2 .p {
+.proceed_section .sec-3_upper_2 .add_box2 .p {
     color: black;
     font-size: small;
     margin: 20px 0 20px -20px;
 
 }
+
+
+@media screen and (max-width: 1000px) {
+    .proceed_section .sec-1 h1 {
+      font-size: 24px;
+    }
+  
+    .proceed_section .sec-2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .proceed_section .article {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .proceed_section .circle-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .proceed_section .sec-3 {
+      height: auto;
+    }
+    .proceed_section .sec-3_upper{
+        display: block;
+        margin: 0;
+    }
+    .proceed_section .fig-img1,
+    .proceed_section .fig-img2,
+    .proceed_section .fig-img3,
+    .proceed_section .fig-img4 {
+      width: 150px;
+      height: auto;
+    }
+    .proceed_section .sec-3 .sec-3_upper_2{
+        margin: 70px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .proceed_section .sec-1 h1 {
+      font-size: 20px;
+    }
+  
+    .proceed_section .sec-2 {
+      gap: 10px;
+    }
+  
+    .proceed_section .article {
+      padding: 10px;
+      height: auto;
+    }
+  
+    .proceed_section .circle-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .proceed_section .sec-3_upper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .proceed_section .add_box,
+    .proceed_section .add_box2 {
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .proceed_section .sec-3 .sec-3_upper_2{
+        display: none;
+      }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .proceed_section .sec-1 h1 {
+      font-size: 16px;
+    }
+  
+    .proceed_section .article {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .proceed_section .article img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .proceed_section .sec-2 button {
+      font-size: small;
+      padding: 5px 15px;
+    }
+  
+    .proceed_section .circle-img {
+      display: none;
+    }
+  
+    .proceed_section .sec-3_upper h1,
+    .proceed_section .sec-3_upper p {
+      font-size: small;
+    }
+  
+    .proceed_section .add_box,
+    .proceed_section .add_box2 {
+      padding: 5px;
+    }
+    .proceed_section .sec-3 .sec-3_upper_2{
+      display: none;
+    }
+  }
+  

@@ -91,7 +91,7 @@ const Join = () => {
                 <img src="/images/pic11.png" className="fig-img4"/>
 
             </div>
-            <div className="sec-3_upper">
+            <div className="sec-3_upper_2">
                 <img src="/images/pic12.png" className="pic12"/>
                 <div className="add_box">
                     <h1>Advertisement</h1>

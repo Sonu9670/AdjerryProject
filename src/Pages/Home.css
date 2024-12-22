@@ -585,7 +585,7 @@ footer hr {
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 470px) {
     figure.heroBox {
         margin-top: -160px;
     }
