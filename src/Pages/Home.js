@@ -6,7 +6,7 @@ import Feq from './Feq';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-contain'>
       <div>
         <section className="sec-1">
 
@@ -27,7 +27,7 @@ const Home = () => {
 
 
         </section>
-        <figure>
+        <figure className="hero-img">
           <img src="/images/Hero section Image.png" className="hero" alt="image 5" />
         </figure>
 
