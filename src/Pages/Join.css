@@ -402,8 +402,8 @@ header h1 {
     }
   
     .proceed_section .article {
-      width: 90%;
-      margin-bottom: 20px;
+      /* width: 90%; */
+      margin: 20px;
     }
   
     .proceed_section .circle-img {
@@ -431,6 +431,22 @@ header h1 {
     .proceed_section .pic7{
         width: 0;
     }
+    .proceed_section .article img{
+        float:inline-end;
+    }
+
+    .proceed_section .sec-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Adjust as needed */
+      }
+      
+      .proceed_section .sec-2 button {
+        /* Add your button styles here */
+        padding: 10px 20px;
+        font-size: 16px;
+      }
   }
   
   @media screen and (max-width: 750px) {
@@ -475,7 +491,7 @@ header h1 {
     }
   
     .proceed_section .article {
-      width: 95%;
+      /* width: 95%; */
       padding: 10px;
     }
   
@@ -487,6 +503,7 @@ header h1 {
     .proceed_section .sec-2 button {
       font-size: small;
       padding: 5px 15px;
+      margin: 10px 100px;
     }
   
     .proceed_section .circle-img {
