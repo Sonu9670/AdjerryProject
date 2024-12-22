@@ -161,7 +161,7 @@ const Adv = () => {
               <img src={object} alt="Cup Design" className="img-fluid" />
             </div>
           </div>
-        </div>
+ </div>
       </>
      
        
