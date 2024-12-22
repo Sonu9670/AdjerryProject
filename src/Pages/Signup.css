@@ -1,33 +1,35 @@
+/* Main styles */
 .signup-container-96 {
     margin: 10px;
     border-radius: 8px;
     padding: 0;
     font-family: Arial, sans-serif;
-    background:  url('./Assests/signupimage.jpg') no-repeat center center ;
+    background: url('./Assests/signupimage.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 50rem;
-  }
-  
+}
 
 .signup-container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
-     width: 40%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 50px;
 }
-.signup-container img{
+
+.signup-container img {
     margin-top: -84px;
 }
+
 .logo-container {
     margin-bottom: 15px;
     text-align: center;
@@ -41,11 +43,10 @@
 h1 {
     text-align: center;
     color: #333;
-  
 }
 
 .input-group {
-   display: flex;
+    display: flex;
     position: relative;
     margin-bottom: 20px;
     margin-top: 23px;
@@ -57,7 +58,8 @@ h1 {
     color: #666;
 }
 
-.input-group input, select {
+.input-group input,
+select {
     width: 90%;
     padding: 7px;
     border: 1px solid #ddd;
@@ -92,18 +94,47 @@ button {
 button:hover {
     background-color: black;
 }
-.text span{
+
+.text span {
     color: #d32f2f;
 }
 
-.form-group label{
+.form-group label {
     color: black;
 }
-.submitsec p{
+
+.submitsec p {
     color: black;
     margin: 0 130px;
 }
-.submitsec p a{
+
+.submitsec p a {
     color: rgb(255, 77, 0);
     font-weight: bold;
 }
+
+/* Responsive styles for max-width: 1200px */
+@media (max-width: 1200px) {
+    .signup-container-96 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .signup-container {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .signup-container img {
+        margin-top: 0;
+    }
+
+    .submitsec p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
