@@ -22,61 +22,61 @@ const Home = () => {
             <button className='but'>Join Now</button>
           </NavLink>
           <figure>
-            <img src="/images/Vector 32 (1).png" />
+            <img src="/images/Vector 32 (1).png" width="100%" />
           </figure>
 
 
         </section>
-        <figure>
+        <figure className='heroBox'>
           <img src="/images/Hero section Image.png" className="hero" alt="image 5" />
         </figure>
-
         <img src="/images/group.png" className="circle" alt="circle" />
-        <section className="sec-2">
-          <figure className="figure">
-            <div className="fig">
-              <img src="/images/rectangle1.png" className="fig1" alt="Rectangle" />
-              <img src="/images/Content Box.png" className="fig2" alt="Content Box" />
-              <img src="/images/image (1).png" className="fig3" alt="Another image" />
+      </div>
+      <section className="homeBox mt-5">
+        <figure className="figure1" style={{ backgroundImage: `url(/images/rectangle1.png)` , backgroundRepeat : 'no-repeat' , backgroundSize : 'contain' }}>
+          <div className="fig">
+            <img src="/images/Content Box.png" className="fig2" alt="Content Box" />
+            <img src="/images/image.png" className="fig4" alt="Image" />
             </div>
             <div className="figa">
-              <img src="/images/image.png" className="fig4" alt="Image" />
-              <img src="/images/Frame 56.png" className="fig5" alt="Frame" />
-            </div>
-          </figure>
+            <img src="/images/image (1).png" className="fig3" alt="Another image" />
+            <img src="/images/Frame 56.png" className="fig5" alt="Frame" />
+          </div>
+        </figure>
 
-          <aside className="aside">
-            <h3>The Process</h3>
-            <h1>
-              <span className="spanhead">Business Users</span> Post Their Requirements:
-            </h1>
-            <div className="d2">
-              <img src="/images/one1.png" className='num1' /><img src="/images/circle1.png" className='circle1' />
-              <p className="d6">
-                Sign up as a business user and share your brand's message, LOGO, and design preferences.
-              </p>
-            </div>
+        <aside className="aside">
+          <h3>The Process</h3>
+          <h1>
+            <span className="spanhead">Business Users</span> Post Their Requirements:
+          </h1>
+          <div className="d2">
+            <img src="/images/one1.png" className='num1' /><img src="/images/circle1.png" className='circle1' />
+            <p className="d6">
+              Sign up as a business user and share your brand's message, LOGO, and design preferences.
+            </p>
+          </div>
 
-            <div className="d4">
-              <img src="/images/two1.png" className='num1' /><img src="/images/circle2.png" className='circle1' />
-              <p className="d6" >
-                Our platform connects you with talented designers who will create stunning ad concepts tailored to your brand.
-              </p>
-            </div>
+          <div className="d4">
+            <img src="/images/two1.png" className='num1' /><img src="/images/circle2.png" className='circle1' />
+            <p className="d6" >
+              Our platform connects you with talented designers who will create stunning ad concepts tailored to your brand.
+            </p>
+          </div>
 
-            <NavLink to="/join">
-              <button>Join now</button>
-            </NavLink>
-          </aside>
-        </section>
-      </div>
-      <section className="sec-4">
+          <NavLink to="/join">
+            <button>Join now</button>
+          </NavLink>
+        </aside>
+      </section>
+      <section className="homeBox">
         <figure className="figure1">
           <img src="/images/rectangle2.png" className="img1" alt="Design Image 1" />
           <img src="/images/rectangle3.png" className="img2" alt="Design Image 2" />
+          <div className='innerImg'>
           <img src="/images/image (5).png" className="img3" alt="Design Image 3" />
           <img src="/images/image (6).png" className="img4" alt="Design Image 4" />
           <img src="/images/image (7).png" className="img5" alt="Design Image 5" />
+          </div>
         </figure>
 
         <aside className="aside d9">
@@ -86,7 +86,7 @@ const Home = () => {
           </h1>
 
           <div className="d2">
-            <img src="/images/one2.png" className='num1' /><img src="/images/circle2.png"className='circle1' />
+            <img src="/images/one2.png" className='num1' /><img src="/images/circle2.png" className='circle1' />
             <p className="d3">
               Designers receive your brief and create eye-catching advertisements that match your requirements.
             </p>
@@ -106,9 +106,8 @@ const Home = () => {
           </NavLink>
         </aside>
       </section>
-      <section className="sec-3">
-        <figure className="figure1">
-          <img src="/images/Rectangle 47.png" className="figure-img2" alt="Retail Image 1" />
+      <section className="homeBox">
+        <figure className="figure1" style={{ backgroundImage: 'url(/images/Rectangle47.png)' , backgroundRepeat : 'no-repeat', backgroundSize : 'contain' }}>
           <img src="/images/image 5 (1).png" className="figure-img3" alt="Retail Image 2" />
         </figure>
 
@@ -143,7 +142,7 @@ const Home = () => {
       </section>
       <section className="sec-5">
         <div className="menu">
-        <img src="/images/Icon3.png"/>
+          <img src="/images/Icon3.png" />
           <h5>Time Period</h5>
           <p>
             Dui Consectetur gravida platea ut dis
@@ -152,7 +151,7 @@ const Home = () => {
         </div>
 
         <div className="menu">
-        <img src="/images/Icon1.png"/>
+          <img src="/images/Icon1.png" />
           <h5>Employee</h5>
           <p>
             Dui Consectetur gravida platea ut dis
@@ -161,9 +160,9 @@ const Home = () => {
         </div>
 
         <div className="menu">
-        <img src="/images/Icon2.png"/>
-        <br/>
-          
+          <img src="/images/Icon2.png" />
+          <br />
+
           <h5>Result</h5>
           <p>
             Dui Consectetur gravida platea ut dis
