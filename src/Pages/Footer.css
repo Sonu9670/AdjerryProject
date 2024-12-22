@@ -1,7 +1,11 @@
 footer {
     width: 100%;
-    margin: 100px;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+footer .logo{
+    height: 80px;
+    width: auto;
 }
 
 .fig {
@@ -48,4 +52,10 @@ footer .i {
 
 footer .i i {
     padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        text-align: center;
+    }
 }

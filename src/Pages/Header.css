@@ -1,45 +1,95 @@
  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 10px;
-    position: sticky;
-    background: black;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   border-radius: 10px;
+   position: sticky;
+   background: black;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   margin-top: 20px;
+ }
 
-.navbar-menu li {
-  margin: 0 20px;
-}
+ .navbar .logo {
+   width: auto;
+   height: 80px;
+ }
 
-.nav-link {
-  color: whitesmoke;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.nav-link:visited {
-  color: whitesmoke;
-}
-.nav-link:active {
-  color: whitesmoke;
-}
+ .navb {
+   margin: 0 20px;
+ }
 
-.nav-link:hover {
-  color: #d32f2f;
-}
+ .flex-box {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   align-items: center;
+ }
 
-.btn {
-  background-color: #FF535D;
-  color: white;
-}
-.btn:hover {
-  background-color: rgb(229, 119, 119);
-}
+ .navbar-menu li {
+   margin: 0 20px;
+ }
 
-.navbar-brand img {
-  height: 80px;
-  margin: 0 10px;
-}
+ .navbar-brand {
+   width: 50%;
+ }
+
+ .nav-link {
+   color: whitesmoke;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+
+ .nav-link:visited {
+   color: whitesmoke;
+ }
+
+ .nav-link:active {
+   color: whitesmoke;
+ }
+
+ .nav-link:hover {
+   color: #d32f2f;
+ }
+
+ .btn {
+   background-color: #d32f2f;
+   color: white;
+ }
+
+ .btn:hover {
+   background-color: rgb(229, 119, 119);
+ }
+
+ .navbar .menubar {
+   display: none;
+   font-size: 30px;
+ }
+
+
+ @media screen and (max-width: 850px) {
+   .hide {
+     display: none;
+   }
+
+   .mobileFlex {
+     flex-direction: column !important;
+   }
+
+   .mobileNav {
+     position: absolute;
+     background: #000000;
+     top: 95px;
+     left: 0;
+     padding: 20px 0;
+   }
+
+   .navbar .menubar {
+     display: block;
+   }
+   .navbar {
+    margin-top: 0;
+   }
+ }
