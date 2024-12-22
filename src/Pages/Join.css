@@ -428,6 +428,9 @@ header h1 {
     .proceed_section .sec-3 .sec-3_upper_2{
         margin: 70px;
     }
+    .proceed_section .pic7{
+        width: 0;
+    }
   }
   
   @media screen and (max-width: 750px) {
@@ -461,6 +464,9 @@ header h1 {
     .proceed_section .sec-3 .sec-3_upper_2{
         display: none;
       }
+      .proceed_section .pic7{
+        width: 0;
+    }
   }
   
   @media screen and (max-width: 370px) {
@@ -498,6 +504,9 @@ header h1 {
     }
     .proceed_section .sec-3 .sec-3_upper_2{
       display: none;
+    }
+    .proceed_section .pic7{
+        width: 0;
     }
   }
   
