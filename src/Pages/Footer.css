@@ -8,13 +8,6 @@ footer .logo{
     width: auto;
 }
 
-.fig {
-    height: 100px;
-    width: 100px;
-    background-color: #111;
-    margin-top: 10px;
-}
-
 .footer-container {
     display: flex;
     margin: 20px auto;

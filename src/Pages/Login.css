@@ -154,3 +154,120 @@ form>.form-group {
     font-size: 14px;
     color: #ff0000;
 } 
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    /* Adjust for large tablets or smaller desktops */
+    .left-side, .right-side {
+        width: 45%;
+    }
+
+    .right-side {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Adjust for tablets */
+    .login-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .right-side {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust for large mobile devices and smaller tablets */
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .login-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .dont-have-account {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Adjust for small mobile devices */
+    .login-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .right-side {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .google-login {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+
+    .checkBox {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .dont-have-account {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .dont-have-account a {
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Adjust for extra small devices */
+    .or-divider::before, .or-divider::after {
+        width: 40%;
+    }
+
+    .google-login {
+        padding: 8px;
+    }
+
+    .login-button {
+        padding: 6px;
+    }
+}

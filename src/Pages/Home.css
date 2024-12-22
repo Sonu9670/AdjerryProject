@@ -44,7 +44,6 @@
 
 .sec-1 button {
     width: 200px;
-    margin: 20px 0 0 650px;
     font-size: 20px;
 }
 
@@ -65,12 +64,16 @@
     margin-top: 50px;
 }
 
-.hero {
-    width: 700px;
-    margin-left: 400px;
-    position: absolute;
-    z-index: 1;
+
+figure.heroBox {
+    display: flex;
+    justify-content: center;
     margin-top: -350px;
+    padding: 20px 0;
+}
+
+.hero {
+    width: 550px;
 }
 
 
@@ -191,21 +194,13 @@
 .circle {
     left: 0;
     margin: 20px 0 0 0;
+    position: absolute;
 }
 
-.sec-2 {
-    /* width: 100%; */
-    height: fit-content;
-    display: flex;
-    margin: 450px 0 0 40px;
-
-
-}
-
-.figure {
+/* .figure {
     width: 50%;
     height: fit-content;
-}
+} */
 
 .figure-img {
     width: 200px;
@@ -214,7 +209,7 @@
 }
 
 .aside {
-    width: 400px;
+    max-width: 400px;
     height: fit-content;
     margin-left: 30px;
 }
@@ -224,6 +219,12 @@
     margin-top: -15px;
     margin-left: -55px;
 
+}
+
+.sec-1 a {
+    display: grid;
+    justify-items: center;
+    text-align: center;
 }
 
 .number {
@@ -250,20 +251,6 @@
     margin-top: 5px;
 }
 
-.sec-3 {
-    /* width: 100%; */
-    height: fit-content;
-    display: flex;
-    margin: 150px 0 0 40px;
-}
-
-.figure1 {
-    width: 50%;
-    height: fit-content;
-    display: flex;
-    margin-left: 80px;
-}
-
 .figure-img2 {
     width: 450px;
     height: 450px;
@@ -273,15 +260,8 @@
     width: 350px;
     height: 350px;
     margin-top: 60px;
-    margin-left: -400px;
 }
 
-.sec-4 {
-    /* width: 100%; */
-    height: fit-content;
-    display: flex;
-    margin: 20px 0 0 100px;
-}
 
 .img1 {
     width: 400px;
@@ -292,24 +272,21 @@
 .img2 {
     width: 100px;
     height: 100px;
-    margin: 400px 0 0 -100px;
+    margin: 200px 0 0 -100px;
 }
 
 .img3 {
     height: 300px;
     width: 150px;
-    margin: 150px 0 0 -400px;
 }
 
 .img4 {
-    margin: 100px 0 0 30px;
     height: 300px;
 }
 
 .img5 {
     height: 300px;
     width: 150px;
-    margin: 150px 0 0 30px;
 }
 
 .sec-5 {
@@ -423,8 +400,6 @@ footer hr {
 }
 
 .fig2 {
-    margin-left: -400px;
-    width: 300px;
     height: 150px;
     margin-top: -50px;
 }
@@ -432,8 +407,8 @@ footer hr {
 .fig3 {
     height: 400px;
     width: 300px;
-    margin-left: 20px;
-    margin-top: -50px;
+    margin-top: -60%;
+    margin-left: -60px;
 }
 
 .fig {
@@ -442,15 +417,7 @@ footer hr {
     height: fit-content;
 }
 
-.figa {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-}
-
 .fig4 {
-    margin-top: -230px;
-    margin-left: 80px;
     height: 350px;
 }
 
@@ -458,7 +425,6 @@ footer hr {
     margin-top: -40px;
     width: 200px;
     height: 50px;
-    margin-left: 60px;
 }
 
 .spanhead {
@@ -509,11 +475,6 @@ footer hr {
     margin-left: 15px;
 }
 
-.d7 {
-    margin-left: -20px;
-    margin-top: 80px;
-}
-
 .n1 {
     font-size: 60px;
     margin-top: 10px;
@@ -553,11 +514,6 @@ footer hr {
     margin-top: -20px
 }
 
-.d9 {
-    margin-left: -90px;
-    margin-top: 160px;
-}
-
 .n3 {
     font-size: 60px;
     margin-top: 10px;
@@ -587,4 +543,61 @@ footer hr {
 
 .s8 {
     margin: 50px 0 0 100px;
+}
+
+.homeBox {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.innerImg {
+    margin-top: -400px;
+    display: flex
+}
+
+@media screen and (max-width: 1000px) {
+    .homeBox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sec-1 p {
+        padding: 20px;
+    }
+
+    figure.heroBox .hero {
+        width: 350px;
+    }
+
+    figure.heroBox {
+        padding: 70px 0;
+        margin-top: -250px;
+    }
+
+    .fig3 {
+        height: auto;
+        width: 247px;
+        margin-top: -45%;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    figure.heroBox {
+        margin-top: -160px;
+    }
+
+    figure.heroBox .hero {
+        width: 100%;
+    }
+
+    .homeBox {
+        overflow: hidden;
+    }
+    #root{
+        overflow: hidden;
+    }
 }
