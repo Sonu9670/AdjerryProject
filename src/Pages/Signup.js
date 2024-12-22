@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import { NavLink , useParams , useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Signup.css'
-import Logo from "./ADJERRY SVG LOGO.png"
+import Logo from "./Assests/ADJERRY LOGO.png"
 
 
 function Signup() {

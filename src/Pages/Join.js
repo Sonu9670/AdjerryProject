@@ -8,13 +8,12 @@ const Join = () => {
   <div className="container proceed_section">
     <section className="sec_1">
       <center>
-        <img src="/images/pic1.png"/>
+        <img src="/images/group6.png"/>
       </center>
       <h1>
         "Choose <span className="span">Your Role</span> and Get Started"
       </h1>
-      <img src="/images/pic2.png" />
-      <img src="/images/pic3.png" className="img" />
+      <img src="/images/group5.png" />
     </section>
 
     <section className="sec-2">
@@ -115,7 +114,7 @@ const Join = () => {
     
     </section>
 
-    <img src="/images/pic14.png" className="circle-img" />
+    <img src="/images/group7.png" className="circle-img" />
     <Feq />
 
   </div>

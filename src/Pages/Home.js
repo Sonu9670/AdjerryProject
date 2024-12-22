@@ -2,10 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import './Home.css';
 import Feq from './Feq';
-import One from "./Assests/One.png"
-import Two from "./Assests/Two.png"
-import Circle from "./Assests/Circle.png"
-import Circle2 from "./Assests/Circle2.png"
+
 
 const Home = () => {
   return (
@@ -34,11 +31,11 @@ const Home = () => {
           <img src="/images/Hero section Image.png" className="hero" alt="image 5" />
         </figure>
 
-        <img src="/images/Group.png" className="circle" alt="circle" />
+        <img src="/images/group.png" className="circle" alt="circle" />
         <section className="sec-2">
           <figure className="figure">
             <div className="fig">
-              <img src="/images/Rectangle 43.png" className="fig1" alt="Rectangle" />
+              <img src="/images/rectangle1.png" className="fig1" alt="Rectangle" />
               <img src="/images/Content Box.png" className="fig2" alt="Content Box" />
               <img src="/images/image (1).png" className="fig3" alt="Another image" />
             </div>
@@ -54,14 +51,14 @@ const Home = () => {
               <span className="spanhead">Business Users</span> Post Their Requirements:
             </h1>
             <div className="d2">
-              <img src={One} className='num1' /><img src={Circle} className='circle1' />
+              <img src="/images/one1.png" className='num1' /><img src="/images/circle1.png" className='circle1' />
               <p className="d6">
                 Sign up as a business user and share your brand's message, LOGO, and design preferences.
               </p>
             </div>
 
             <div className="d4">
-              <img src={Two} className='num1' /><img src={Circle2} className='circle1' />
+              <img src="/images/two1.png" className='num1' /><img src="/images/circle2.png" className='circle1' />
               <p className="d6" >
                 Our platform connects you with talented designers who will create stunning ad concepts tailored to your brand.
               </p>
@@ -75,8 +72,8 @@ const Home = () => {
       </div>
       <section className="sec-4">
         <figure className="figure1">
-          <img src="/images/Rectangle 30.png" className="img1" alt="Design Image 1" />
-          <img src="/images/Rectangle 26.png" className="img2" alt="Design Image 2" />
+          <img src="/images/rectangle2.png" className="img1" alt="Design Image 1" />
+          <img src="/images/rectangle3.png" className="img2" alt="Design Image 2" />
           <img src="/images/image (5).png" className="img3" alt="Design Image 3" />
           <img src="/images/image (6).png" className="img4" alt="Design Image 4" />
           <img src="/images/image (7).png" className="img5" alt="Design Image 5" />
@@ -89,14 +86,14 @@ const Home = () => {
           </h1>
 
           <div className="d2">
-            <img src={One} className='num1' /><img src={Circle}className='circle1' />
+            <img src="/images/one2.png" className='num1' /><img src="/images/circle2.png"className='circle1' />
             <p className="d3">
               Designers receive your brief and create eye-catching advertisements that match your requirements.
             </p>
           </div>
 
           <div className="d4">
-            <img src={Two} className='num1' /><img src={Circle2} className='circle1' />
+            <img src="/images/two2.png" className='num1' /><img src="/images/circle3.png" className='circle1' />
             <p className="d6">
               Once the designs are ready, Business Users can browse and select their favorite concept.
             </p>
@@ -122,7 +119,7 @@ const Home = () => {
           </h1>
 
           <div className="d2">
-            <img src={One} className='num1' /><img src={Circle} className='circle1' />
+            <img src="/images/one2.png" className='num1' /><img src="/images/circle2.png" className='circle1' />
             <p style={{ marginLeft: '30px' }}>
               The selected design is sent directly to our retailers, who print your advertisement
               on cups, water bottles, plates, or any other disposables.
@@ -130,7 +127,7 @@ const Home = () => {
           </div>
 
           <div style={{ display: 'flex', paddingTop: '30px' }}>
-            <img src={Two} className='num1' /><img src={Circle2} className='circle1' />
+            <img src="/images/two2.png" className='num1' /><img src="/images/circle3.png" className='circle1' />
             <p style={{ marginLeft: '15px' }}>
               Your custom-printed products are ready to be distributed, ensuring your brand reaches
               a wider audience in a unique and memorable way.
@@ -146,7 +143,7 @@ const Home = () => {
       </section>
       <section className="sec-5">
         <div className="menu">
-          <i className="fa-solid fa-stopwatch"></i>
+        <img src="/images/Icon3.png"/>
           <h5>Time Period</h5>
           <p>
             Dui Consectetur gravida platea ut dis
@@ -155,7 +152,7 @@ const Home = () => {
         </div>
 
         <div className="menu">
-          <i className="fa-solid fa-users"></i>
+        <img src="/images/Icon1.png"/>
           <h5>Employee</h5>
           <p>
             Dui Consectetur gravida platea ut dis
@@ -164,10 +161,9 @@ const Home = () => {
         </div>
 
         <div className="menu">
-          <i className="fa-solid fa-star" style={{ fontSize: '30px', marginTop: '10px' }}></i>
-          <i className="fa-solid fa-star" style={{ fontSize: '30px' }}></i>
-          <br />
-          <i className="fa-solid fa-star" style={{ fontSize: '30px' }}></i>
+        <img src="/images/Icon2.png"/>
+        <br/>
+          
           <h5>Result</h5>
           <p>
             Dui Consectetur gravida platea ut dis
