@@ -1,13 +1,12 @@
 import React from "react";
 import { Link ,useNavigate } from "react-router-dom";
 import "./Sidebar.css";
-import Graph from "./images/Graph.png";
+import Graph from "./images/business/data-management (1).png";
 import Activity from "./images/Activity.png";
-import Chart from "./images/Chart.png";
-import Category from "./images/Category.png";
-import Discovery from "./images/Discovery.png";
+import Chart from "./images/business/graph.png";
+import Category from "./images/menu-button.png";
+import Discovery from "./images/business/compass-circular-tool.png";
 import Experience from "./images/experience-1.png";
-import Profile from "./images/profile-picture.webp";
 
 function Sidebar() {
   const navigate = useNavigate();
