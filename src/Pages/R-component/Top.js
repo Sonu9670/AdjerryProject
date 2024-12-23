@@ -20,7 +20,7 @@ const Top = () => {
                 <div class="retail">
                     <Link to="/business/view" className='retail-1'>
                         <div class="retail-icon">
-                            <span> <h3>Design Selection</h3></span>    <img src={Design} alt="Design Icon" />
+                            <span> <h3>My orders</h3></span>    <img src={Design} alt="Design Icon" />
                         </div>
                         <p>A gallery to view and select designs submitted by designers.</p>
                     </Link>
@@ -29,7 +29,7 @@ const Top = () => {
                 <div class="retail">
                     <Link to="/uploadDesign" className='retail-1'>
                         <div class="retail-icon">
-                            <span> <h3>Upload Design</h3></span>   <img src={Post} alt="Post Icon" />
+                            <span> <h3>My services</h3></span>   <img src={Post} alt="Post Icon" />
                         </div>
 
                         <p>If you have already design for ads then upload it.</p>
