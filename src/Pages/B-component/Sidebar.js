@@ -1,10 +1,6 @@
 import React from "react";
 import { Link ,useNavigate } from "react-router-dom";
 import "./Sidebar.css";
-import Graph from "./images/business/data-management (1).png";
-import Chart from "./images/business/graph.png";
-import Category from "./images/menu-button.png";
-import Discovery from "./images/business/compass-circular-tool.png";
 import Experience from "./images/experience-1.png";
 
 function Sidebar() {
@@ -19,19 +15,19 @@ function Sidebar() {
   return (
     <div className="menu-sidebar">
       <Link to="/uploadDesign" className="menu-item">
-        <img src={Graph} alt="Projects Icon" className="menu-icon" />
+        <img src="/images/sidebar/data-management (1).png" alt="Projects Icon" className="menu-icon" />
         <span className="menu-text">Upload Design</span>
       </Link>
       <div className="menu-item">
-        <img src={Chart} alt="Completed Designs Icon" className="menu-icon" />
+        <img src="/images/sidebar/graph.png" alt="Completed Designs Icon" className="menu-icon" />
         <span className="menu-text">View Post</span>
       </div>
       <Link to="/business/view" className="menu-item">
-        <img src={Category} alt="All Designs" className="menu-icon" />
+        <img src='/images/sidebar/menu-button.png' alt="All Designs" className="menu-icon" />
         <span className="menu-text">All Designs</span>
       </Link>
       <Link to="/business/orders" className="menu-item">
-        <img src={Discovery} alt="Order Icon" className="menu-icon" />
+        <img src="/images/sidebar/compass-circular-tool.png" alt="Order Icon" className="menu-icon" />
         <span className="menu-text">Orders</span>
       </Link>
 
