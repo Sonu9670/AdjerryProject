@@ -102,7 +102,7 @@ Designs.getByBusinessUser = (userId, limit, offset, callback) => {
     `;
 
     const countQuery = `
-        SELECT COUNT(*) AS totalCount FROM designs LEFT JOIN business ON designs.ads_id = business.id WHERE business.user_id = ?`;
+        SELECT COUNT(*) AS totalCount FROM designs LEFT JOIN business ON designs.ads_id = business.id WHERE business.user_id = ? OR designs.user_id = ?`;
 
     connection.query(query, [userId,userId, limit, offset], (err, results) => {
         if (err) {
@@ -110,7 +110,7 @@ Designs.getByBusinessUser = (userId, limit, offset, callback) => {
             return callback(err);
         }
 
-        connection.query(countQuery, [userId], (countErr, countResults) => {
+        connection.query(countQuery, [userId , userId], (countErr, countResults) => {
             if (countErr) {
                 console.error('Error fetching design count:', countErr.message);
                 return callback(countErr);
