@@ -1,14 +1,14 @@
 import React from 'react';
 import './Sidebar.css';
 import { NavLink } from "react-router-dom";
-import Graph from "./image/Graph.png"
 import Activity from "./image/Activity.png"
-import Chart from "./image/Chart.png"
-import Category from "./image/Category.png"
-import Discovery from "./image/Discovery.png"
 import Experience from "./image/experience-1.jpg"
 import Profile from "./image/profile-picture.webp"
 import Group from './image/Group .png'
+import Graph from "./images/business/data-management (1).png";
+import Chart from "./images/business/graph.png";
+import Category from "./images/menu-button.png";
+import Discovery from "./images/business/compass-circular-tool.png";
 
 function Sidebar() {
   return (
