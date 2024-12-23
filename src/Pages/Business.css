@@ -19,3 +19,60 @@
     flex-direction: row;
     margin:30px;
   }
+
+  @media screen and (max-width: 1000px) {
+    .main0 {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .main1 {
+      width: 100%;
+    }
+    .main2 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .main0 {
+      justify-content: center;
+    }
+  
+    .main1 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .main2 {
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .main0 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .main1 {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .main2 {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      margin: 5px 0;
+    }
+    
+  }

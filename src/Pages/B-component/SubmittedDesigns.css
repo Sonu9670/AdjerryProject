@@ -80,3 +80,22 @@
 .view-all-link-alt a:hover {
   text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 1000px){
+  .submitted-designs-alt{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 760px){
+  .submitted-designs-alt{ 
+    width:80% ;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .submitted-designs-alt{ 
+    width:100% ;
+  }
+}
