@@ -14,11 +14,11 @@ function Sidebar() {
         <span className="sidebar-item-text">Projects</span>
       </div>
       <div className="sidebar-item">
-        <img src={Activity} alt="Transactions Icon" className="sidebar-item-icon" />
+        <img src="/images/sidebar/graph.png" alt="Transactions Icon" className="sidebar-item-icon" />
         <span className="sidebar-item-text">Transactions</span>
       </div>
       <div className="sidebar-item">
-        <img src="/images/sidebar/graph.png" alt="Completed Designs Icon" className="sidebar-item-icon" />
+        <img src="/images/sidebar/app.png" alt="Completed Designs Icon" className="sidebar-item-icon" />
         <NavLink to='/designer/view'><span className="sidebar-item-text">Completed Designs</span></NavLink>
       </div>
       <div className="sidebar-item">

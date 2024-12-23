@@ -23,7 +23,7 @@ function Sidebar() {
         <span className="menu-text">View Post</span>
       </div>
       <Link to="/business/view" className="menu-item">
-        <img src='/images/sidebar/menu-button.png' alt="All Designs" className="menu-icon" />
+        <img src='/images/sidebar/app.png' alt="All Designs" className="menu-icon" />
         <span className="menu-text">All Designs</span>
       </Link>
       <Link to="/business/orders" className="menu-item">
