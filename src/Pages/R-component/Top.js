@@ -12,7 +12,7 @@ const Top = () => {
             <div class="retail-container">
                 <Link to="/business/add" class="retail">
                     <div class="retail-icon">
-                        <span> <h3>ADD & Service  </h3>  </span>  <img src={Wallet} alt="Wallet Icon" />
+                        <span> <h3>Add Service  </h3>  </span>  <img src={Wallet} alt="Wallet Icon" />
                     </div>
                     <p>A detailed overview of the budget allocation and transaction history.</p>
                 </Link>
