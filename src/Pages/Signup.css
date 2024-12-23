@@ -119,6 +119,7 @@ button:hover {
         flex-direction: column;
         height: auto;
         padding: 20px;
+        margin-top: 20px;
     }
 
     .signup-container {
@@ -126,6 +127,7 @@ button:hover {
         margin-left: 0;
         padding: 20px;
         box-shadow: none;
+        margin-top: 25px;
     }
 
     .signup-container img {

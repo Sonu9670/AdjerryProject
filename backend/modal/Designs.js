@@ -102,7 +102,7 @@ Designs.getByBusinessUser = (userId, limit, offset, callback) => {
     `;
 
     const countQuery = `
-        SELECT COUNT(*) AS totalCount FROM designs JOIN business ON designs.ads_id = business.id WHERE business.user_id = ?`;
+        SELECT COUNT(*) AS totalCount FROM designs LEFT JOIN business ON designs.ads_id = business.id WHERE business.user_id = ?`;
 
     connection.query(query, [userId,userId, limit, offset], (err, results) => {
         if (err) {

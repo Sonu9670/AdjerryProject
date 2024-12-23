@@ -112,10 +112,7 @@ const DesignTable = () => {
           </tbody>
         </table>
         <div className="pagination00">
-          <button
-            onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
-            disabled={page === 1}
-          >
+          <button onClick={() => setPage((prev) => Math.max(prev - 1, 1))} disabled={page === 1} >
             Previous
           </button>
           <span>

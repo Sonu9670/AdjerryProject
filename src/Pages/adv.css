@@ -111,3 +111,105 @@
 .custom-btn-submit-000:hover {
   background-color: #d28383;
 }
+
+
+@media screen and (max-width: 760px){
+  .scard{
+    width: 100%;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+  }
+  .text-center{
+    margin: 0 0 50px 0;
+  }
+  .mb-5{
+width: 100%;
+  }
+  .head{
+    font-size: 20px;
+   }
+   .lead{
+    width: auto;
+   }
+.modal-overlay-000{
+  width: 100%;
+}
+}
+@media screen and (max-width: 540px){
+  .modal-content-000 {
+    padding: 15px;
+    max-width: 300px;
+    width: 95%;
+  }
+
+  .modal-body-000 h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body-000 p {
+    font-size: 0.9rem;
+  }
+
+  .upload-button-000,
+  .custom-btn-close-000,
+  .custom-btn-submit-000 {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .image-container-000 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .custom-modal-actions-000{
+    width: 100%;
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 360px){
+  .scard{
+    width: 100%;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+  }
+ .head{
+  font-size: 20px;
+ }
+ .lead{
+  width: auto;
+ }
+  .mb-5{
+width: 100%;
+  }
+  .modal-content-000 {
+    padding: 15px;
+    max-width: 300px;
+    width: 95%;
+  }
+
+  .modal-body-000 h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body-000 p {
+    font-size: 0.9rem;
+  }
+
+  .upload-button-000,
+  .custom-btn-close-000,
+  .custom-btn-submit-000 {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .image-container-000 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .custom-modal-actions-000{
+    width: 100%;
+    margin: 0 40px;
+  }
+}
