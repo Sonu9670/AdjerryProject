@@ -1,0 +1,82 @@
+.retailer-sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .retailer-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .retailer-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .retailer-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+  }
+  
+  .retailer-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .retailer-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #f01a1a, #fe00ff);
+    color: white;
+    width: 200px;
+    height: 220px;
+    margin: 10px;
+  }
+  
+  .retailer-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 5px auto;
+  }
+  
+  .retailer-card .retailer-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px auto;
+  }
+  
+  .retailer-card .retailer-button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px auto;
+  }
+  
+  .retailer-card .retailer-button:hover {
+    background: linear-gradient(to right, #9645ec, #1ac9f0);
+  }
+  
+  .retailer-image img,
+  .retailer-group img {
+    width: 100%;
+  }
+  
+  .retailer-image{
+    height:auto;
+     width: 100%;
+  }

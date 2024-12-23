@@ -1,0 +1,110 @@
+.add-container{
+    margin: 10px;
+}
+.add-box-7850{
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.add-box-7851 {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0.1rem;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.add-box-7851 input {
+    width: 710px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.add-box-7851 button {
+    width: 20%;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.categories-add {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .category-add {
+    margin-bottom: 40px;
+  }
+  
+  .add-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d32f2f;
+  }
+  
+  .add-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .add-card-9231 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+  }
+  
+  .add-content-4913 {
+    text-align: center;
+  }
+  
+  .add-product-image {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .add-product-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .add-price-1342 {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+
+
+  
+.add-333 {
+    width: auto;
+    position: fixed; /* Keeps the button in a constant position */
+    right: 20px; /* Distance from the right side of the screen */
+    bottom: 20px; /* Distance from the bottom of the screen */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    z-index: 1000; /* Ensures the button stays on top */
+  }
+  
+  .add-333:hover {
+    background-color: #d32f2f; /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  }

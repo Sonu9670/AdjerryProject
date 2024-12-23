@@ -1,0 +1,21 @@
+.retailer-main0 {
+    display: flex;
+  
+    flex-direction: row;
+    justify-content:space-around;
+    height: 900px;
+    width: 100%;
+    /* border: 2px solid blue; */
+  }
+
+
+  .retailer-main1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+ /* .retailer-main2{
+    display: flex;
+    flex-direction: row;
+    margin:30px;
+  } */
