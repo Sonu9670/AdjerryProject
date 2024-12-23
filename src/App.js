@@ -69,6 +69,7 @@ function App() {
         <Route path='/signup/:type' element={<Signup />} />
         <Route path='/proceed' element={<Join />} />
         <Route path='/contact' element={<Contactpage />} />
+        <Route path='/service' element={<ProtectedRoute element={<Service />} />} />
 
         
         <Route path='/business/home' element={<ProtectedRoute element={<Bussiness />} />} />
