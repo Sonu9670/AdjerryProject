@@ -97,3 +97,70 @@
 .order-container  .status.cancelled {
     color: #dc3545;
 }
+
+
+
+
+/* Breakpoint for max-width: 1000px */
+@media screen and (max-width: 1000px) {
+    .order-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .order-container .order-img img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .order-container li p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Breakpoint for max-width: 750px */
+  @media screen and (max-width: 750px) {
+    .order-container {
+      padding: 10px;
+    }
+  
+    .order-container ul {
+      padding: 8px;
+    }
+  
+    .order-container .order-img {
+      gap: 5px;
+    }
+  
+    .order-container .order-img img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .order-container li p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Breakpoint for max-width: 370px */
+  @media screen and (max-width: 370px) {
+    .order-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .order-container ul {
+      padding: 5px;
+    }
+  
+    .order-container .order-img img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .order-container li p {
+      font-size: 0.7rem;
+    }
+  
+    .order-container .price {
+      font-size: 0.8rem;
+    }
+  }

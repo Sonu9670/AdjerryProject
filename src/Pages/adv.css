@@ -111,7 +111,15 @@
 .custom-btn-submit-000:hover {
   background-color: #d28383;
 }
+.text-upload {
+  text-align: left; /* Aligns content to the left */
+}
 
+/* Button styling */
+ button .bbttn {
+  display: inline-block; /* Keeps the button inline */
+  margin: 0; /* Resets any default margin */
+}
 
 @media screen and (max-width: 760px){
   .scard{
@@ -135,6 +143,20 @@ width: 100%;
 .modal-overlay-000{
   width: 100%;
 }
+.d-flex.justify-content-between{
+  gap: 50px;
+  margin: 5px;
+}
+
+  .text-upload {
+    text-align: center; /* Centers content */
+  }
+
+  .bbttn {
+    margin: 0 auto; /* Centers the button */
+    display: inline-block; /* Ensures proper inline styling */
+  }
+
 }
 @media screen and (max-width: 540px){
   .modal-content-000 {
