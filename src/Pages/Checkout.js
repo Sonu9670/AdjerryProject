@@ -6,16 +6,19 @@ import "./Checkout.css";
 const Checkout = () => {
   const location = useLocation();
   const selectedItems = location.state?.selectedItems || [];
+  const pincode = location.state?.pincode || 201001;
   const design = location.state?.design || [];
-  const [products, setProducts] = useState([]);
+  const [decodedToken ,setDecodedToken] = useState([]);
+  const [products ,setProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [discountCode, setDiscountCode] = useState("");
+  const [error, setError] = useState("");
   const [discountAmount, setDiscountAmount] = useState(0);
 
   const fetchSelectedItems = async () => {
     if (selectedItems.length === 0) {
       console.warn("No items selected for checkout.");
-      return; // Prevent unnecessary API call
+      return;
     }
     try {
       const response = await axios.post("/api/selected-items", {
@@ -41,6 +44,13 @@ const Checkout = () => {
 
   useEffect(() => {
     console.log("Selected Items:", selectedItems);
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setError("Authentication token is missing");
+      return;
+    }
+    const decoded = JSON.parse(atob(token.split(".")[1]));
+    setDecodedToken(decoded);
     fetchSelectedItems();
   }, []);
 
@@ -99,7 +109,7 @@ const Checkout = () => {
       <div className="all-body">
         <div class="delivery-card-200">
           <h2>
-            Deliver to: <span>Klaus Michelson, 221002</span>{" "}
+            Deliver to: <span>{decodedToken.name}, {pincode}</span>{" "}
             <span class="office-label-200">OFFICE</span>
           </h2>
           <p class="address-200">1677 Round Top Rd, Harrisville, USA</p>
@@ -149,7 +159,7 @@ const Checkout = () => {
               Billing address is same as shipping
             </label>
           </div>
-          <Link to="/payment" state={{ selectedItems: selectedItems, design: design, coupen: discountCode, pay_amount: total - discountAmount , amount :  total}} class="pay-button-30">Pay &#8377; {total - discountAmount}</Link>
+          <Link to="/payment" state={{ selectedItems: selectedItems, design: design, coupen: discountCode, pay_amount: total - discountAmount, amount: total }} class="pay-button-30">Pay &#8377; {total - discountAmount}</Link>
           <div class="footer-30">
             Safe and Secure Payments. Easy returns. 100% Authentic products.
           </div>
