@@ -1,10 +1,10 @@
 /* General Styles */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }
+  } */
   
   /* body {
     background-color: #f4f4f4;
@@ -126,3 +126,175 @@
     margin-top: 10px;
   }
   
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+  .invoice-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .customer-details,
+  .invoice-meta {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .invoice-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .invoice-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .invoice-table th,
+  .invoice-table td {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .invoice-table {
+    width: 100%;
+    overflow-x: auto;
+    border: none;
+  }
+
+  .invoice-table thead {
+    display: none;
+  }
+
+  .invoice-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #dff1fd;
+  }
+
+  .invoice-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .invoice-table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .invoice-table tbody td img {
+    max-width: 50px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .invoice-table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .invoice-table tbody td:nth-child(1)::before {
+    content: "ITEM Name:";
+  }
+
+  .invoice-table tbody td:nth-child(2)::before {
+    content: "QTY:";
+  }
+
+  .invoice-table tbody td:nth-child(3)::before {
+    content: "Price:";
+  }
+
+  .invoice-table tbody td:nth-child(4)::before {
+    content: "Total AMOUNT:";
+  }
+}
+
+
+@media screen and (max-width: 370px) {
+  .invoice-title {
+    font-size: 1.2rem;
+  }
+
+  .customer-details h2,
+  .invoice-meta p {
+    font-size: 0.9rem;
+  }
+
+  .invoice-table th,
+  .invoice-table td {
+    font-size: 0.8rem;
+  }
+
+  .payment-section p,
+  .terms p {
+    font-size: 0.8rem;
+  }
+    .invoice-table {
+      display: block;
+      overflow-x: auto;
+      width: 100%;
+      border: none;
+    }
+  
+    .invoice-table thead {
+      display: none;
+    }
+  
+    .invoice-table tbody tr {
+      background: #dff1fd;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    .invoice-table tbody td {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+  
+    .invoice-table tbody td img {
+      max-width: 50px;
+      height: auto;
+      margin-left: 10px;
+    }
+  
+    .invoice-table tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      flex: 1;
+      text-align: left;
+      margin-right: 10px;
+      color: #333;
+    }
+  
+    .invoice-table tbody td:nth-child(1)::before {
+      content: "ITEM Name:";
+    }
+    
+    .invoice-table tbody td:nth-child(2)::before {
+      content: "QTY:";
+    }
+    
+    .invoice-table tbody td:nth-child(3)::before {
+      content: "Price:";
+    }
+    
+    .invoice-table tbody td:nth-child(4)::before {
+      content: "Total AMOUNT:";
+    }
+  
+}
