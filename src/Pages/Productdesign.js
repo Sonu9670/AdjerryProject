@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+import { Link , useNavigate } from "react-router-dom"
 import { useParams } from "react-router-dom";
 import { IoImageSharp } from "react-icons/io5";
 import { IoSend } from "react-icons/io5";
@@ -9,9 +9,11 @@ import Add from "./Assests/addd.png";
 import minus from "./Assests/minus.png";
 
 const Product = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [adsId, setAdsId] = useState(0);
+  const [pincode, setPincode] = useState(201001);
   const [error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userType, setUserType] = useState("");
@@ -37,7 +39,7 @@ const Product = () => {
         setError(err);
       });
   }, []);
-  
+
 
   // Increment quantity for a specific item
   const incrementQuantity = (itemId) => {
@@ -194,17 +196,33 @@ const Product = () => {
   };
 
   const handleApprove = () => {
-  return categories
-    .flatMap(category => category.items) // Flatten all items
-    .filter(item => quantities[item.id] > 0) // Filter by selected quantity
-    .map(item => ({
-      id: item.id,
-      name: item.name,
-      image: item.image,
-      price: item.price, // Include price
-      quantity: quantities[item.id], // Include selected quantity
-    }));
-};
+    return categories
+      .flatMap(category => category.items) // Flatten all items
+      .filter(item => quantities[item.id] > 0) // Filter by selected quantity
+      .map(item => ({
+        id: item.id,
+        name: item.name,
+        image: item.image,
+        price: item.price, // Include price
+        quantity: quantities[item.id], // Include selected quantity
+      }));
+  };
+
+  const handlePincodeChange = (e) => {
+    setPincode(e.target.value);
+  };
+
+  const handleNavigation = () => {
+    const pincodeString = String(pincode);
+    if (pincodeString.trim() === "") {
+      alert("Please enter a pincode to proceed."); 
+    } else if (pincodeString.length !== 6) {
+      alert("Please enter a valid 6-digit pincode."); 
+    } else {
+      navigate("/checkout", { state: { selectedItems: handleApprove(), design: data , pincode : pincode } });
+    }
+  };
+
 
   return (
     <div className="inventory-0-33">
@@ -248,8 +266,8 @@ const Product = () => {
             <div class="requirement-details-33">
               <h2>Company Name: {data.business_company || 'Self Design'}</h2>
               <p>Caption: {data.caption || 'Self Design'}</p>
-              <img src={(data.business_media?.[0] || data.image?.[0]) || 'default-image-path.jpg'} 
-  width="100px"  alt="Preview" />
+              <img src={(data.business_media?.[0] || data.image?.[0]) || 'default-image-path.jpg'}
+                width="100px" alt="Preview" />
               <div class="user-info-33">
                 <div className="profile-pic-33">
                   <img
@@ -350,9 +368,16 @@ const Product = () => {
             ) : (null)}
           </section>
 
+          <hr />
           {userType == "business" ? (
             <section class="advertisement-categories-33">
-              <h2>Advertisement Categories</h2>
+              <div className="flex-box">
+                <h2>Advertisement Categories</h2>
+                <div>
+                  <label>Enter your Pincode</label>
+                  <input type="number" className="form-control" value={pincode} onChange={handlePincodeChange} placeholder="Enter a Pincode" />
+                </div>
+              </div>
 
               {categories.length !== 0 ? (
                 categories.map((category, categoryIndex) => (
@@ -389,12 +414,10 @@ const Product = () => {
                   </div>
                 ))
               ) : (
-                  <p>No Category available</p>
-                )}
+                <p>No Category available</p>
+              )}
 
-              <Link to="/checkout" state={{ selectedItems: handleApprove() , design : data }}>
-                <button class="approved-333">Approved</button>
-              </Link>
+                <button class="approved-333" onClick={handleNavigation}>Approved</button>
             </section>
           ) : (
             <p></p>

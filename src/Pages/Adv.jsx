@@ -153,7 +153,7 @@ const Adv = () => {
               <p className="lead text-left text-dark">
               Unlock access to 10,000+ designers for hire with Dribbble, the largest platform of designers online. Simplify your hiring process today and never have to worry about where to hire top design talent again
               </p>
-              <div className='text-left '>
+              <div className='text-upload'>
               <button className="bbttn" onClick={closeModal}>Upload Design</button>
               </div>
             </div>
