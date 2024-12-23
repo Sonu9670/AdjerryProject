@@ -97,9 +97,9 @@ const Header = () => {
           </div>
           {user ? (
             <div className="d-flex gap-4 align-items-center">
-              <span>Welcome, {user.email}</span>
               <Link to="/profile" className="align-self-center">
                 Profile
+                <span>Welcome, {user.email}</span>
               </Link>
               <button onClick={handleLogout} className="btn px-3xl">
                 Logout
