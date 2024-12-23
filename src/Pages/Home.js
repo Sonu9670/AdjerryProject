@@ -18,7 +18,7 @@ const Home = () => {
           <p>Reach Your Target Audience with eye-catching designs on disposables that stand out.
             Transform ordinary cups, bottles, and plates into powerful marketing tools that leave a lasting impression.
           </p>
-          <NavLink to="/join">
+          <NavLink to="/proceed">
             <button className='but'>Join Now</button>
           </NavLink>
           <figure>
@@ -63,7 +63,7 @@ const Home = () => {
             </p>
           </div>
 
-          <NavLink to="/join">
+          <NavLink to="/proceed">
             <button>Join now</button>
           </NavLink>
         </aside>
@@ -99,7 +99,7 @@ const Home = () => {
             </p>
           </div>
 
-          <NavLink to="/join">
+          <NavLink to="/proceed">
             <button >
               Join now
             </button>
@@ -133,7 +133,7 @@ const Home = () => {
             </p>
           </div>
 
-          <NavLink to="/join">
+          <NavLink to="/proceed">
             <button className='lstbtn'>
               Join now
             </button>

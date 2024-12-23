@@ -128,8 +128,6 @@ figure.heroBox {
   position: absolute;
 } */
 .vector {
-    /* position: absolute;
-  z-index: -1; */
     width: 80px;
     height: 150px;
 }
