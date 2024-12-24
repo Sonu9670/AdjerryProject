@@ -98,6 +98,7 @@ function App() {
         <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
         <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer/>} />} />
         <Route path='/retailer/add-services' element={<ProtectedRoute element={<AddService />} />} />
+        <Route path='/retailer/my-services' element={<ProtectedRoute element={<AddService />} />} />
 
 
       </Routes>
