@@ -28,7 +28,7 @@ const upload = multer({ storage: storage });
 
 function authenticateToken(req, res, next) {
     const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1]; 
+    const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
         return res.status(401).json({ message: 'Access token required' });
@@ -108,7 +108,7 @@ route.post('/login', (req, res) => {
         }
 
         // Generate JWT token
-        const token = jwt.sign({ id: user.id, email: user.email, name: user.first_name+' '+user.last_name, profile : user.profile , user_type: user.user_type }, JWT_SECRET, {
+        const token = jwt.sign({ id: user.id, email: user.email, name: user.first_name + ' ' + user.last_name, profile: user.profile, user_type: user.user_type }, JWT_SECRET, {
             expiresIn: '1h'
         });
 
@@ -321,7 +321,7 @@ route.get('/getAllDesigns/:ads_id', authenticateToken, (req, res) => {
     const limit = parseInt(req.query.limit) || 5; // Default to 5 items per page
     const offset = (page - 1) * limit;
 
-    Designs.getByAdsId(ads_id , userId , limit, offset, (err, result) => {
+    Designs.getByAdsId(ads_id, userId, limit, offset, (err, result) => {
         if (err) {
             return res.status(500).json({
                 message: 'Error fetching designs',
@@ -754,7 +754,7 @@ route.post('/add-services', authenticateToken, (req, res) => {
     const user_id = req.user.id;
     const { pincode, products } = req.body;
 
-    Retailer.addservices({ user_id, pincode, products },(err, result) => {
+    Retailer.addservices({ user_id, pincode, products }, (err, result) => {
         if (err) {
             return res.status(500).json({
                 message: 'Error creating booking',
@@ -786,6 +786,39 @@ route.post('/check-retailer-pincode', authenticateToken, (req, res) => {
             data: result,
         });
     });
+});
+
+
+route.get('/getMyRetailerProduct', async (req, res) => {
+    try {
+        const retailerResult = await new Promise((resolve, reject) => {
+            Retailer.getAll((err, result) => {
+                if (err) return reject(err);
+                resolve(result);
+            });
+        });
+
+        const data = await Promise.all(
+            retailerResult.map(async (element) => {
+                const product_id = element.product;
+                const transformedProducts = product_id.map((id) => ({ id }));
+
+                const selectedItems = await new Promise((resolve, reject) => {
+                    Product.getSelectedItems(transformedProducts, (error, resultt) => {
+                        if (error) return reject(error);
+                        resolve(resultt);
+                    });
+                });
+
+                element.product = selectedItems;
+                return element;
+            })
+        );
+
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: 'An error occurred', details: error });
+    }
 });
 
 

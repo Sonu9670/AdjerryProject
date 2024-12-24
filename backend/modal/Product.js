@@ -63,7 +63,8 @@ Product.getSelectedItems = (selectedItems, callback) => {
       products.product_name,
       products.description,
       products.price,
-      products.image
+      products.image , 
+      categories.name AS category_name
     FROM 
       products JOIN categories ON categories.id = products.cat_id
     WHERE 
@@ -84,6 +85,7 @@ Product.getSelectedItems = (selectedItems, callback) => {
         description: product.description,
         price: product.price,
         image: product.image,
+        category: product.category_name,
         quantity: selectedItem ? selectedItem.quantity : 0,
       };
     });
