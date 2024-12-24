@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./Add.css";
+import "./AddService.css";
 import axios from "axios";
 
-const Add = () => {
+const AddService = () => {
   const [showCheckboxes, setShowCheckboxes] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  const [pincode, setPincode] = useState("");
  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const handleSearch = () => {
-    if (inputValue.trim() !== "") {
+    if (pincode.trim() !== "") {
       setShowCheckboxes(true);
     }
   };
@@ -50,11 +50,11 @@ const Add = () => {
         <div className="add-box-7851">
         <input
           type="text"
-          placeholder="Search for paper cups..."
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Enter your Pincode Where you are provide services."
+          value={pincode}
+          onChange={(e) => setPincode(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch}>Add</button>
         </div>
         {showCheckboxes && (
           products && products.length !== 0 ? (
@@ -65,19 +65,15 @@ const Add = () => {
                   <div className="add-products-grid">
                     {category.items.map((product) => (
                       <div className="add-card-9231" key={product.id}>
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          width="100"
-                          height="100"
-                          className="add-product-image"
-                        />
+                      <lable htmlFor={`product-${product.id}`}> 
+                        <img src={product.image} alt={product.name} width="100" height="100" className="add-product-image"/>
+                        </lable>
                         <div className="add-content-4913">
                           <h3 className="add-product-name">{product.name}</h3>
                           <p className="add-product-description">{product.description}</p>
                           <p className="add-price-1342">Starting at Rs {product.price}</p>
                         </div>
-                        <input type="checkbox" />
+                        <input type="checkbox" id={`product-${product.id}`} />
                       </div>
                        
                     ))}
@@ -95,4 +91,4 @@ const Add = () => {
   );
 };
 
-export default Add;
+export default AddService;

@@ -34,7 +34,7 @@ import Invoicepage from './Pages/Invoicepage';
 
 //retailer user page
 import Retailer from './Pages/Retailer';
-import Add from "./Pages/Add"
+import AddService from "./Pages/AddService"
 
 
 function App() {
@@ -89,15 +89,15 @@ function App() {
         <Route path='/designer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
         <Route path='/productdesign/:id' element={<ProtectedRoute element={<Productdesign />}/>} />
         <Route path='/editprofile' element={<ProtectedRoute element={<EditProfile />} />} />
-        <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
         <Route path='/uploadDesign' element={<ProtectedRoute element={<Adv />} />} />
         <Route path='/checkout' element={<ProtectedRoute element={<Checkout />} />} />
         <Route path='/payment' element={<ProtectedRoute element={<Payment />} />} />
-
-
-
+        
+        
+        
+        <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
         <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer/>} />} />
-        <Route path='/business/add' element={<ProtectedRoute element={<Add />} />} />
+        <Route path='/retailer/add-services' element={<ProtectedRoute element={<AddService />} />} />
 
 
       </Routes>

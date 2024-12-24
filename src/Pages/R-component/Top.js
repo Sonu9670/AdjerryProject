@@ -10,7 +10,7 @@ const Top = () => {
     return (
         <>
             <div class="retail-container">
-                <Link to="/business/add" class="retail">
+                <Link to="/retailer/add-services" class="retail">
                     <div class="retail-icon">
                         <span> <h3>Add Service  </h3>  </span>  <img src={Wallet} alt="Wallet Icon" />
                     </div>
