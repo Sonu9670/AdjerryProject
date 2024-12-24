@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./AddService.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const AddService = () => {
   const navigate = useNavigate();
@@ -142,7 +143,12 @@ const AddService = () => {
                   </div>
                 </section>
               ))}
-              <button class="add-333" onClick={handleSubmit}>Add</button>
+              <Link to="/retailer/my-services">
+  <button class="add-333" onClick={handleSubmit}>Add</button>
+              </Link>
+              
+               
+              
             </div>
           ) : (
             <p className="no-orders">Enter your Pincode.</p>

@@ -27,7 +27,7 @@ const Top = () => {
                 </div>
 
                 <div class="retail">
-                    <Link to="/uploadDesign" className='retail-1'>
+                    <Link to="/retailer/my-services" className='retail-1'>
                         <div class="retail-icon">
                             <span> <h3>My services</h3></span>   <img src={Post} alt="Post Icon" />
                         </div>
