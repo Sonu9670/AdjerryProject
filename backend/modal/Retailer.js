@@ -8,7 +8,7 @@ Retailer.getAll = (callback) => {
             retailer.*, 
             users.first_name AS first_name, 
             users.last_name AS last_name, 
-            users.profle AS profle, 
+            users.profile AS profile, 
             users.email AS user_email, 
             users.phone AS user_phone 
         FROM retailer
