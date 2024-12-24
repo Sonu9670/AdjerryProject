@@ -243,3 +243,147 @@ background-color: whitesmoke;
     font-weight: bold;
   }
   
+
+
+
+  
+/* Media Query for max-width 1000px */
+@media screen and (max-width: 1000px) {
+    .service-header-9451 {
+        flex-direction: column;
+        padding: 15px;
+      }
+      .header-img-8450 {
+        max-width: 550px;
+      }
+    .products-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .search-box-7851 {
+      flex-direction: column;
+    }
+  
+    .search-box-7851 input {
+      margin-bottom: 10px;
+    }
+  
+    .suggestion-boxes-7824 {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .services-5341{
+        margin: 0;
+    }
+    .services-5340{
+        margin: 10px;
+    }
+    .search-box-7851 {
+        max-width: 400px;
+        width: 100%;
+        display: flex ;
+        flex-direction: row;
+        background: none;
+      }
+    
+      .search-box-7851 input {
+        font-size: 14px;
+        padding: 8px;
+      }
+    
+      .search-box-7851 button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+
+  }
+  
+  /* Media Query for max-width 750px */
+  @media screen and (max-width: 750px) {
+    .header-img-8450 {
+        max-width: 400px;
+      }
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-9231 {
+      padding: 15px;
+    }
+/*   
+    .header-img-8452 img {
+      width: 80%;
+      margin: 0 auto;
+    } */
+  
+    .search-box-7850 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .services-5341{
+        margin: 0;
+    }
+    .search-box-7851 {
+        flex-direction: column;
+        gap: 8px;
+      }
+    
+      .search-box-7851 input {
+        width: 100%;
+      }
+    
+      /* .search-box-7851 button {
+        width: 100%;
+      } */
+  }
+  
+  /* Media Query for max-width 370px */
+  @media screen and (max-width: 370px) {
+    .service-header-9451 {
+        padding: 10px;
+      }
+    
+      .header-img-8450 {
+        max-width: 350px;
+      }
+    .card-9231 {
+      padding: 10px;
+    }
+  
+    /* .header-img-8452 img {
+      width: 100%;
+    } */
+  
+    .search-box-7850 {
+      padding: 10px;
+    }
+  
+    .search-box-7851 {
+      gap: 5px;
+    }
+  
+    .suggestion-boxes-7824 {
+      gap: 10px;
+    }
+    .suggestion-6734{
+        width: auto;
+    } 
+    .services-5343{
+        margin: 0;
+    }
+    .search-box-7851 {
+        gap: 5px;
+      }
+    
+      .search-box-7851 input {
+        font-size: 12px;
+        padding: 6px;
+      }
+    
+      .search-box-7851 button {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+    
+  }
+  

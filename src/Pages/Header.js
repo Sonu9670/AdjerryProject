@@ -77,12 +77,12 @@ const Header = () => {
               )}
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
-                  About Us
+                  AboutUs
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
-                  Contact Us
+                  ContactUs
                 </Link>
               </li>
               {user ? (

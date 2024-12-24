@@ -32,6 +32,9 @@ import EditProfile from './Pages/EditProfile';
 import Profile from './Pages/Profile';
 import Invoicepage from './Pages/Invoicepage';
 
+//retailer user page
+import Retailer from './Pages/Retailer';
+import AddService from "./Pages/AddService"
 
 
 function App() {
@@ -84,17 +87,20 @@ function App() {
         <Route path='/designer/home' element={<ProtectedRoute element={<Designerpage />} />} />
         <Route path='/designer/view' element={<ProtectedRoute element={<View />} />} />
         <Route path='/designer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
-        
         <Route path='/productdesign/:id' element={<ProtectedRoute element={<Productdesign />}/>} />
-        
         <Route path='/editprofile' element={<ProtectedRoute element={<EditProfile />} />} />
-
-      
-        <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
-
         <Route path='/uploadDesign' element={<ProtectedRoute element={<Adv />} />} />
         <Route path='/checkout' element={<ProtectedRoute element={<Checkout />} />} />
         <Route path='/payment' element={<ProtectedRoute element={<Payment />} />} />
+        
+        
+        
+        <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
+        <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer/>} />} />
+        <Route path='/retailer/add-services' element={<ProtectedRoute element={<AddService />} />} />
+        <Route path='/retailer/my-services' element={<ProtectedRoute element={<AddService />} />} />
+
+
       </Routes>
 
       <Footer />

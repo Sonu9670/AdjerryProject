@@ -6,6 +6,7 @@ const path = require('path');
 const User = require('../modal/User');
 const Business = require('../modal/Business');
 const Designs = require('../modal/Designs');
+const Retailer = require('../modal/Retailer');
 const RejectDesign = require('../modal/RejectDesign');
 const Product = require('../modal/Product');
 const Transaction = require('../modal/Transaction');
@@ -746,6 +747,44 @@ route.get('/avaBalance', authenticateToken, (req, res) => {
         }
 
         res.status(200).json(results);
+    });
+});
+
+route.post('/add-services', authenticateToken, (req, res) => {
+    const user_id = req.user.id;
+    const { pincode, products } = req.body;
+
+    Retailer.addservices({ user_id, pincode, products },(err, result) => {
+        if (err) {
+            return res.status(500).json({
+                message: 'Error creating booking',
+                error: err.message,
+            });
+        }
+
+        res.status(201).json({
+            message: 'Add Services successfully',
+            data: result,
+        });
+    });
+});
+
+route.post('/check-retailer-pincode', authenticateToken, (req, res) => {
+    const user_id = req.user.id;
+    const { pincode } = req.body;
+
+    Retailer.checkUserPincode(user_id, pincode, (err, result) => {
+        if (err) {
+            return res.status(500).json({
+                message: 'Error checking pincode',
+                error: err.message,
+            });
+        }
+
+        res.status(200).json({
+            message: result ? 'Pincode exists for this retailer' : 'Pincode not found for this retailer',
+            data: result,
+        });
     });
 });
 
