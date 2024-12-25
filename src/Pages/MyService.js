@@ -41,14 +41,14 @@ const MyService = () => {
 
   return (
     <div>
-      <section className="category-MyService">
+      <section className="container mt-5 category-MyService">
         <h2 className="MyService-title">My Service</h2>
         {data && data.length !== 0 ? (
           <div className="categories-MyService">
             {Object.entries(data).map(([categoryId, category]) => (
               <section className="category-MyService" key={categoryId}>
-                <div>
-                  <h2 className="MyService-title">{category.pincode}</h2>
+                <div className="flex-box">
+                  <h2 className="MyService-title">Pincode : {category.pincode}</h2>
                   <Link to={`/retailer/update-services/${category.pincode}`} className="btn" >Update</Link>
                 </div>
                 <div className="MyService-products-grid">
