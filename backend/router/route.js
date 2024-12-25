@@ -769,6 +769,25 @@ route.post('/add-services', authenticateToken, (req, res) => {
     });
 });
 
+route.post('/update-services', authenticateToken, (req, res) => {
+    const user_id = req.user.id;
+    const { pincode, products } = req.body;
+
+    Retailer.updateServices({ user_id, pincode, products }, (err, result) => {
+        if (err) {
+            return res.status(500).json({
+                message: 'Error creating booking',
+                error: err.message,
+            });
+        }
+
+        res.status(201).json({
+            message: 'Update Services successfully',
+            data: result,
+        });
+    });
+});
+
 route.post('/check-retailer-pincode', authenticateToken, (req, res) => {
     const user_id = req.user.id;
     const { pincode } = req.body;
@@ -788,11 +807,11 @@ route.post('/check-retailer-pincode', authenticateToken, (req, res) => {
     });
 });
 
-
-route.get('/getMyRetailerProduct', async (req, res) => {
+route.get('/getMyRetailerProduct', authenticateToken, async (req, res) => {
+    const user_id = req.user.id;
     try {
         const retailerResult = await new Promise((resolve, reject) => {
-            Retailer.getAll((err, result) => {
+            Retailer.getAll(user_id, (err, result) => {
                 if (err) return reject(err);
                 resolve(result);
             });
@@ -819,6 +838,19 @@ route.get('/getMyRetailerProduct', async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'An error occurred', details: error });
     }
+});
+
+route.get('/getProductByPincode/:pincode', authenticateToken, (req, res) => {
+    const user_id = req.user.id;
+    const pincode = req.params.pincode;
+    Retailer.getAllByPincode(user_id, pincode, (err, result) => {
+        if (err) {
+            console.error('Error fetching orders:', err);
+            return res.status(500).json({ message: 'Failed to fetch Transaction' });
+        }
+        res.status(200).json(result);
+    });
+
 });
 
 

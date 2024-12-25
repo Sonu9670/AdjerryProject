@@ -37,7 +37,7 @@ const AddService = () => {
       )
       .then((response) => {
         alert(response.data.message);
-        navigate("/my-services");
+        navigate("/retailer/my-services");
       })
       .catch((err) => {
         alert(`Error: ${err.response?.data?.message || err.message}`);
@@ -143,12 +143,7 @@ const AddService = () => {
                   </div>
                 </section>
               ))}
-              <Link to="/retailer/my-services">
-  <button class="add-333" onClick={handleSubmit}>Add</button>
-              </Link>
-              
-               
-              
+              <button class="add-333" onClick={handleSubmit}>Add</button>
             </div>
           ) : (
             <p className="no-orders">Enter your Pincode.</p>
