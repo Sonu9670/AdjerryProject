@@ -35,6 +35,7 @@ import Invoicepage from './Pages/Invoicepage';
 //retailer user page
 import Retailer from './Pages/Retailer';
 import AddService from "./Pages/AddService"
+import MyService from "./Pages/MyService"
 
 
 function App() {
@@ -98,7 +99,7 @@ function App() {
         <Route path='/retailer/wallet' element={<ProtectedRoute element={<Wallet />} />} />
         <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer/>} />} />
         <Route path='/retailer/add-services' element={<ProtectedRoute element={<AddService />} />} />
-        <Route path='/retailer/my-services' element={<ProtectedRoute element={<AddService />} />} />
+        <Route path='/retailer/my-services' element={<ProtectedRoute element={<MyService />} />} />
 
 
       </Routes>

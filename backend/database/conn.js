@@ -9,7 +9,7 @@ const mysql = require('mysql2');
 // });
 
 const connection = mysql.createConnection({
-    host : '54.164.178.165',
+    host : '44.219.231.65',
     user: 'remote_ads',
     port : 3306,
     password : 'Admin@2024!',

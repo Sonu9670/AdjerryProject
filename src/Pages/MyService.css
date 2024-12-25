@@ -1,0 +1,52 @@
+
+.categories-MyService {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .category-MyService {
+    margin-bottom: 40px;
+  }
+  
+  .MyService-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d32f2f;
+  }
+  
+  .MyService-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .MyService-card-9231 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+  }
+  
+  .MyService-content-4913 {
+    text-align: center;
+  }
+  
+  .MyService-product-image {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .MyService-product-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .MyService-price-1342 {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
