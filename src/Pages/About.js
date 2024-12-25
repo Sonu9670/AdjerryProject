@@ -3,10 +3,10 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about-section">
-      <div class="hero">
+    <div className="about-section-333">
+      <div class="hero-333">
         <img src="./images/people-about.png" alt="Adjerry Logo" />
-        <div class="text-content">
+        <div class="text-content-333">
           <h1>Revolutionizing Advertising, adding value at every level.</h1>
           <p>
             Welcome to Adjerry, a cutting-edge platform dedicated to
@@ -20,16 +20,16 @@ const About = () => {
             creativity, innovation, and collaboration among businesses,
             designers, and manufacturers.
           </p>
-          <div class="stats">
-            <div class="stat">
+          <div class="stats-333">
+            <div class="stat-333">
               <h2>100+</h2>
               <p>Advertisement Services</p>
             </div>
-            <div class="stat">
+            <div class="stat-333">
               <h2>15+</h2>
               <p>Advertisement Categories</p>
             </div>
-            <div class="stat">
+            <div class="stat-333">
               <h2>10+</h2>
               <p>Team Members</p>
             </div>
@@ -37,43 +37,40 @@ const About = () => {
         </div>
       </div>
 
-      <div class="hero-1">
-        <div class="header">
+      <div class="hero-1-333">
+        <div class="header-333">
           <h1>
             A unified platform where businesses, designers, and manufacturers
             connect
             <br /> effortlessly.
           </h1>
-          {/* <p>
-            <img src="quote-icon-placeholder.png" alt="Quote Icon" />
-            Effortlessly.
-          </p> */}
+        
         </div>
-        <div class="image-grid">  
+        <div class="image-grid-333">  
         <img
             src="./images/about us page.png"
             alt="Laptop Image"
-            className="main"
+            className="main-333"
           />
           
           </div>        
             <img
               src="./images/Outside Subway.png"
               alt="Sign 1"
-              className="image-one"
+              className="image-one-333"
             />
         
             <img
               src="./images/car.png"
               alt="Car Branding"
-              className="image-two"
+              className="image-two-333"
             />
           
          
             <img
               src="./images/Subway.png"
               alt="Sign 2"
-              className="image-three"
+              className="image-three-333"
             />
         
             
@@ -81,9 +78,9 @@ const About = () => {
         
       </div>
 
-      <div class="hero-2">
-        <div class="content">
-          <div class="text-section">
+      <div class="hero-2-333">
+        <div class="content-333">
+          <div class="text-section-333">
             <h2>Why Choose Us?</h2>
             <p>
               End-to-End Support: From ideation to execution, we cover every
@@ -99,12 +96,12 @@ const About = () => {
             </p>
           </div>
 
-          <div class="logo-section">
+          <div class="logo-section-333">
             <img src="./images/logo adjerry (1) 1.png" alt="Adjerry Logo" />
           </div>
         </div>
 
-        <div class="text-section">
+        <div class="text-section-333">
           <h2>Our Values</h2>
           <ul>
             <li>
@@ -126,7 +123,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div class="footer-last">
+        <div class="footer-last-333">
           <h2>Join Us on This Journey</h2>
           <p>
             Whether you’re a business seeking impactful advertising, a designer

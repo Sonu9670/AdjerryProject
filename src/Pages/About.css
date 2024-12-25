@@ -1,13 +1,14 @@
-.about-section {
+.about-section-333 {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 /*hero section*/
-.hero {
+.hero-333 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,38 +16,38 @@
   margin-bottom: 30px;
   width: 80%;
 }
-.hero img {
+.hero-333 img {
   border-radius: 10px;
   width: 40%;
 }
 
-.text-content h1 {
+.text-content-333 h1 {
   font-size: 26px;
   color: #333;
 
   font-weight: bold;
 }
-.text-content p {
+.text-content-333 p {
   line-height: 1.6;
   color: #555;
   font-weight: bold;
 }
-.stats {
+.stats-333 {
   display: flex;
   justify-content: space-around;
   width: 100%;
   max-width: 800px;
   margin-top: 20px;
 }
-.stat {
+.stat-333 {
   text-align: center;
 }
-.stat h2 {
+.stat-333 h2 {
   font-size: 32px;
   color: #ff4b2b;
   margin: 0;
 }
-.stat p {
+.stat-333 p {
   font-size: 16px;
   color: #777;
   margin: 0;
@@ -57,7 +58,7 @@
 /*hero section1*/
 
 
-  .hero-1 {
+  .hero-1-333 {
     margin: 0 auto;
     padding: 20px;
     width: 80%;
@@ -65,14 +66,14 @@
     flex-direction: column;
   }
  
-  .header h1 {
+  .header-333 h1 {
     font-size: 26px;
   color: #333;
 
   font-weight: bold;
     float: left;
   }
-  .image-grid {
+  .image-grid-333 {
   
     display:flex;
     flex-direction: row;
@@ -84,35 +85,35 @@
 
 
   }
-  .image-grid img {
+  .image-grid-333 img {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 300px;
   }
-  .main{
+  .main-333{
     width: 35%;
   }
 
-.image-one {
+.image-one-333 {
     position: absolute;
-    top: 690px; /* Adjust the distance from the top */
+    top: 720px; /* Adjust the distance from the top */
     right: 670px; /* Adjust the distance from the right corner */
     width: 15%;
     height: auto;
 }
 
-.image-two {
+.image-two-333 {
     position: absolute;
-    top: 91%; /* Center vertically relative to the main image */
+    top: 95%; /* Center vertically relative to the main image */
     right:820px; /* 20px distance from the right edge */
     transform: translateY(-50%); /* Adjust for exact centering */
     width: 10%; /* Adjust the size */
     height: 100px;
 }
 
-.image-three {
+.image-three-333 {
     position: absolute;
-    bottom: -250px; /* Adjust the distance from the bottom */
+    bottom: -280px; /* Adjust the distance from the bottom */
     right: 820px; /* Adjust the distance from the right corner */
     width: 10%; /* Adjust the size */
     height: auto;
@@ -123,116 +124,60 @@
 
 
 
-
-  /* .image-grid {
-  
-    display:flex;
-    flex-direction: row;
-    
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-
-
-  }
-  .image-grid img {
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-  }
-  .main{
-    width: 30%;
-    height: 200px;
-  }
-
-
-
-
-.image-one {
-   width: 20%;
-   height: 200px;
-   margin: 20px 10px;
-}
-
-
-.image-two {
-  margin: 0px 10px;
-  width: 10%;
-  height: 100px;
-   
-} 
-
- .image-three {
-  width: 10%;
-  height: 100px;
-}
-
-.image-four {
-  width: 10%;
-  height: 100px;
-}
-
-.image-five {
-  width: 10%;
-  height: 100px; 
-} */
-
-
-.hero-2 {
+.hero-2-333 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
-  .content {
+  .content-333 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 20px;
   }
-  .text-section {
+  .text-section-333 {
     flex: 1;
     min-width: 300px;
   }
-  .text-section h2 {
+  .text-section-333 h2 {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
   }
-  .text-section p,
-  .text-section ul {
+  .text-section-333 p,
+  .text-section-333 ul {
     font-size: 16px;
     color: #555;
     margin: 10px 0;
   }
-  .text-section ul {
+  .text-section-333 ul {
     list-style-type: disc;
     margin-left: 20px;
   }
-  .logo-section {
+  .logo-section-333 {
     flex: 0 1 300px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .logo-section img {
+  .logo-section-333 img {
     max-width: 50%;
     height: auto;
     border-radius: 10px;
     margin: 50px 0;
   }
-  .footer-last {
+  .footer-last-333 {
     margin-top: 40px;
    
   }
-  .footer-last h2 {
+  .footer-last-333 h2 {
     font-size: 28px;
     color: #333;
     font-weight: bold;
     /* margin-bottom: 10px; */
   }
-  .footer-last p {
+  .footer-last-333 p {
     font-size: 16px;
     color: #555;
   }
