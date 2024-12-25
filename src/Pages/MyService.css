@@ -1,10 +1,6 @@
 
 .categories-MyService {
     margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
   .category-MyService {
     margin-bottom: 40px;

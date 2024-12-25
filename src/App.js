@@ -36,6 +36,7 @@ import Invoicepage from './Pages/Invoicepage';
 import Retailer from './Pages/Retailer';
 import AddService from "./Pages/AddService"
 import MyService from "./Pages/MyService"
+import UpdateService from "./Pages/UpdateService"
 
 
 function App() {
@@ -100,6 +101,7 @@ function App() {
         <Route path='/retailer/home' element={<ProtectedRoute element={<Retailer/>} />} />
         <Route path='/retailer/add-services' element={<ProtectedRoute element={<AddService />} />} />
         <Route path='/retailer/my-services' element={<ProtectedRoute element={<MyService />} />} />
+        <Route path='/retailer/update-services/:pincode' element={<ProtectedRoute element={<UpdateService />} />} />
 
 
       </Routes>
