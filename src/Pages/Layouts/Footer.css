@@ -46,7 +46,9 @@ footer .i {
 footer .i i {
     padding: 10px;
 }
-
+.text-muted a {
+    color: red;
+}
 @media screen and (max-width: 800px) {
     footer{
         text-align: center;
