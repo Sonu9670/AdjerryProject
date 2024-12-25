@@ -1,4 +1,3 @@
-
 .card-container {
     display: flex;
     gap: 20px;
@@ -16,12 +15,14 @@
     text-align: center;
     transition: transform 0.3s;
 }
-  a {
-    color: white;
+
+a {
+    color: #e32c3a;
     text-decoration: none;
 }
-a:hover{
-    color: white;
+
+a:hover {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -29,12 +30,13 @@ a:hover{
     transform: scale(1.05);
 }
 
-.icon{
+.icon {
     display: flex;
-  align-items: center;
-  justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 
 }
+
 .icon img {
     width: 30px;
     height: 30px;
@@ -52,7 +54,7 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-    .card-container{
+    .card-container {
         width: 100%;
         display: flex;
         flex-direction: column;
