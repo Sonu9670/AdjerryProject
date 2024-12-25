@@ -17,11 +17,11 @@
     transition: transform 0.3s;
 }
   a {
-    color: white;
+    color: #e32c3a;
     text-decoration: none;
 }
 a:hover{
-    color: white;
+    color: #e32c3a;
     text-decoration: none;
 }
 
