@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './Assests/ADJERRY LOGO.png';
+import logo from './ADJERRY LOGO.png';
 import "./Footer.css";
 
 const Footer = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Header.css";
-import logo from "./Assests/ADJERRY LOGO.png";
+import logo from "./ADJERRY LOGO.png";
 
 const Header = () => {
   const [user, setUser] = useState(null);
@@ -56,30 +56,35 @@ const Header = () => {
           <div className="">
             <ul className="navbar-nav d-flex flex-row gap-5 mobileFlex">
               {user ? (
+                <>
+              
                 <li className="nav-item">
                   <Link to={`/${user.user_type}/home`} className="nav-link">
                     Dashboard
                   </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/business/service" className="nav-link">
+                      Service
+                    </Link>
+                  </li>
+                </>
               ) : (
-                <>
+              <>
+               <li className="nav-item">
+                <Link to="/about" className="nav-link">
+                  AboutUs
+                </Link>
+              </li>
                   <li className="nav-item">
                     <Link to="/" className="nav-link">
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/service" className="nav-link">
-                      Service
-                    </Link>
-                  </li>
-                </>
+</>
+              
               )}
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  AboutUs
-                </Link>
-              </li>
+             
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
                   ContactUs

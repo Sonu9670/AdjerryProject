@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'; // No Router here
 
 // layout page
-import Header from './Pages/Header';
-import Footer from './Pages/Footer';
+import Header from './Pages/Layouts/Header';
+import Footer from './Pages/Layouts/Footer';
 
 // comman page
 import Home from './Pages/Home';
@@ -21,6 +21,7 @@ import View from "./Pages/View"
 import Productdesign from './Pages/Productdesign';
 import Payment from "./Pages/Payment"
 import Service from "./Pages/Service"
+import About from "./Pages/About"
 
 
 
@@ -74,8 +75,7 @@ function App() {
         <Route path='/signup/:type' element={<Signup />} />
         <Route path='/proceed' element={<Join />} />
         <Route path='/contact' element={<Contactpage />} />
-        <Route path='/service' element={<ProtectedRoute element={<Service />} />} />
-
+       
         
         <Route path='/business/home' element={<ProtectedRoute element={<Bussiness />} />} />
         <Route path='/business/view' element={<ProtectedRoute element={<View />} />} />
@@ -84,6 +84,7 @@ function App() {
         <Route path='/business/orders' element={<ProtectedRoute element={<Orders />} />} />
         <Route path='/orders/invoice/:order_id' element={<ProtectedRoute element={<Invoicepage />} />} />
         <Route path='/business/service' element={<ProtectedRoute element={<Service />} />} />
+        <Route path='/about' element={<ProtectedRoute element={<About/>} />} />
         
         
         <Route path='/designer/home' element={<ProtectedRoute element={<Designerpage />} />} />
