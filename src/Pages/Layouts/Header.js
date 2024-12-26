@@ -56,35 +56,31 @@ const Header = () => {
           <div className="">
             <ul className="navbar-nav d-flex flex-row gap-5 mobileFlex">
               {user ? (
-                <>
-              
                 <li className="nav-item">
                   <Link to={`/${user.user_type}/home`} className="nav-link">
                     Dashboard
                   </Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/business/service" className="nav-link">
-                      Service
-                    </Link>
-                  </li>
-                </>
               ) : (
-              <>
-               <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  AboutUs
-                </Link>
-              </li>
+                <>
                   <li className="nav-item">
                     <Link to="/" className="nav-link">
                       Home
                     </Link>
                   </li>
-</>
-              
+                  <li className="nav-item">
+                    <Link to="/about" className="nav-link">
+                      AboutUs
+                    </Link>
+                  </li>
+                </>
               )}
-             
+
+              <li className="nav-item">
+                <Link to="/service" className="nav-link">
+                  Service
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
                   ContactUs
@@ -94,7 +90,7 @@ const Header = () => {
                 user.user_type === "business" ? (
                   <li className="nav-item">
                     <Link to="/business/orders" className="nav-link">
-                      Order
+                      Orders
                     </Link>
                   </li>
                 ) : (
