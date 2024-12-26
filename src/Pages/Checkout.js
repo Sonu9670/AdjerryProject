@@ -34,6 +34,10 @@ const Checkout = () => {
     setDiscountAmount(100);
   };
 
+  const addAddress = () => {
+
+  }
+
   useEffect(() => {
     const calculatedTotal = selectedItems.reduce(
       (acc, item) => acc + item.quantity * item.price,
@@ -112,12 +116,12 @@ const Checkout = () => {
             Deliver to: <span>{decodedToken.name}, {pincode}</span>{" "}
             <span class="office-label-200">OFFICE</span>
           </h2>
-          <p class="address-200">1677 Round Top Rd, Harrisville, USA</p>
+          <p class="address-200">1677 Round Top Rd, Harrisville,</p>
           <p class="note-200">
             Note: Address will be shared with your selected retailers
           </p>
           <div class="change-link-200">
-            <a href="#">Change</a>
+            <a onClick={addAddress}>Add Address</a>
           </div>
         </div>
         <div class="checkout-card-30">
