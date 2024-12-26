@@ -181,3 +181,125 @@
     font-size: 16px;
     color: #555;
   }
+
+
+
+
+
+
+
+  /* General styling adjustments for responsiveness */
+.about-section-333 {
+  padding: 20px;
+}
+
+/* For screens smaller than 1000px */
+@media screen and (max-width: 1000px) {
+  .hero-333 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+.hero-333 img {
+  width: 100%;
+}
+  .text-content-333 {
+    margin-top: 20px;
+  }
+
+  .stats-333 {
+    flex-direction: column;
+  }
+
+  .stat-333 {
+    margin-bottom: 15px;
+  }
+
+  .image-grid-333 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .image-one-333, .image-two-333,.image-three-333  {
+       display: none;
+}
+.main-333{
+  width: auto;
+}
+}
+
+/* For screens smaller than 750px */
+@media screen and (max-width: 750px) {
+  .hero-1-333 .header-333 h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .hero-333 img {
+    width: 100%;
+  }
+  .logo-section-333 img{
+    margin: 0 0 50px 0;
+  }
+  .hero-2-333 {
+    flex-direction: column;
+  }
+
+  .text-section-333 {
+    margin-bottom: 20px;
+  }
+
+  .logo-section-333 img {
+    max-width: 200px;
+  }
+  .image-one-333, .image-two-333,.image-three-333  {
+    display: none;
+}
+.main-333{
+width: auto;
+}
+}
+
+/* For screens smaller than 370px */
+@media screen and (max-width: 370px) {
+  .text-content-333 h1 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+.hero-333 img{
+  width: 100%;
+}
+  .stats-333 h2 {
+    font-size: 1.2rem;
+  }
+
+  .stat-333 p {
+    font-size: 0.9rem;
+  }
+
+  .hero-2-333 ul li {
+    font-size: 0.85rem;
+  }
+
+  .footer-last-333 h2 {
+    font-size: 1rem;
+  }
+
+  .footer-last-333 p {
+    font-size: 0.85rem;
+  }
+  .image-one-333, .image-two-333,.image-three-333  {
+    display: none;
+}
+.main-333{
+width:100%;
+}
+.hero-1-333 .header-333 h1{
+  font-size: large;
+}
+.hero-2-333{
+  margin: 0;
+}
+.logo-section-333 img{
+  margin: 0 0 20px 0;
+}
+}
