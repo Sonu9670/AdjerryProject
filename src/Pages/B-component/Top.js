@@ -18,7 +18,7 @@ const Top = () => {
                 </Link>
 
                 <div class="card">
-                    <Link to="/business/view" className='card-1'>
+                    <Link to="/business/view" className='card'>
                         <div class="icon">
                             <span> <h3>Design Selection</h3></span>    <img src={Design} alt="Design Icon" />
                         </div>
@@ -27,7 +27,7 @@ const Top = () => {
                 </div>
 
                 <div class="card">
-                    <Link to="/uploadDesign" className='card-1'>
+                    <Link to="/uploadDesign" className='card'>
                         <div class="icon">
                             <span> <h3>Upload Design</h3></span>   <img src={Post} alt="Post Icon" />
                         </div>
