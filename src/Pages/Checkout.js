@@ -7,6 +7,8 @@ const Checkout = () => {
   const location = useLocation();
   const selectedItems = location.state?.selectedItems || [];
   const pincode = location.state?.pincode || 201001;
+  const [address1, setAddress1] = useState("hno ...");
+  const [address2, setAddress2] = useState("area ...");
   const design = location.state?.design || [];
   const [decodedToken ,setDecodedToken] = useState([]);
   const [products ,setProducts] = useState([]);
@@ -116,7 +118,7 @@ const Checkout = () => {
             Deliver to: <span>{decodedToken.name}, {pincode}</span>{" "}
             <span class="office-label-200">OFFICE</span>
           </h2>
-          <p class="address-200">1677 Round Top Rd, Harrisville,</p>
+          <p class="address-200">{address1}, {address2},</p>
           <p class="note-200">
             Note: Address will be shared with your selected retailers
           </p>
