@@ -461,9 +461,9 @@ route.post('/selected-items', (req, res) => {
 
 route.post('/booking', authenticateToken, (req, res) => {
     const user_id = req.user.id;
-    const { items, order_id, design_id, amount, pay_amount, coupen } = req.body;
+    const { items, order_id, design_id, amount, pay_amount, coupen , address } = req.body;
 
-    Order.booking({ items, order_id, design_id, amount, pay_amount, coupen }, user_id, (err, result) => {
+    Order.booking({ items, order_id, design_id, amount, pay_amount, coupen, address }, user_id, (err, result) => {
         if (err) {
             return res.status(500).json({
                 message: 'Error creating booking',

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link , useNavigate } from "react-router-dom"
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom"
+import { fetchPincodeDetails } from "../utils/api";
 import { IoImageSharp } from "react-icons/io5";
 import { IoSend } from "react-icons/io5";
 import "./Productdesign.css";
@@ -13,7 +13,7 @@ const Product = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [adsId, setAdsId] = useState(0);
-  const [pincode, setPincode] = useState(201001);
+  const [pincode, setPincode] = useState(null);
   const [error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userType, setUserType] = useState("");
@@ -208,18 +208,39 @@ const Product = () => {
       }));
   };
 
-  const handlePincodeChange = (e) => {
-    setPincode(e.target.value);
+  const [details, setDetails] = useState(null);  
+  const handlePincodeChange = async (e) => {
+      const enteredPincode = e.target.value;
+      setPincode(enteredPincode);
+  
+      if (enteredPincode.length === 6) {
+          try {
+              const result = await fetchPincodeDetails(enteredPincode);
+              if (result) {
+                  setDetails(result);
+                  setError(""); // Clear any previous error
+                  console.log(result);
+              } else {
+                  setDetails(null);
+                  setError("No details found for the entered pincode.");
+              }
+          } catch (err) {
+              setDetails(null);
+              setError("Failed to fetch details. Please try again.");
+              console.error(err);
+          }
+      }
   };
+  
 
   const handleNavigation = () => {
     const pincodeString = String(pincode);
     if (pincodeString.trim() === "") {
-      alert("Please enter a pincode to proceed."); 
+      alert("Please enter a pincode to proceed.");
     } else if (pincodeString.length !== 6) {
-      alert("Please enter a valid 6-digit pincode."); 
+      alert("Please enter a valid 6-digit pincode.");
     } else {
-      navigate("/checkout", { state: { selectedItems: handleApprove(), design: data , pincode : pincode } });
+      navigate("/checkout", { state: { selectedItems: handleApprove(), design: data, pincode: pincode , details: details } });
     }
   };
 
@@ -376,6 +397,11 @@ const Product = () => {
                 <div>
                   <label>Enter your Pincode</label>
                   <input type="number" className="form-control" value={pincode} onChange={handlePincodeChange} placeholder="Enter a Pincode" />
+                  {details && (
+                    <p>
+                      {details.district || "N/A"} , {details.state || "N/A"}
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -417,7 +443,7 @@ const Product = () => {
                 <p>No Category available</p>
               )}
 
-                <button class="approved-333" onClick={handleNavigation}>Approved</button>
+              <button class="approved-333" onClick={handleNavigation}>Approved</button>
             </section>
           ) : (
             <p></p>

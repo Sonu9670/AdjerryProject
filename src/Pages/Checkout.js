@@ -7,11 +7,12 @@ const Checkout = () => {
   const location = useLocation();
   const selectedItems = location.state?.selectedItems || [];
   const pincode = location.state?.pincode || 201001;
+  const details = location.state?.details || null;
   const [houseno, setHouseno] = useState("hno ...");
   const [area, setArea] = useState("area ...");
   const design = location.state?.design || [];
-  const [decodedToken ,setDecodedToken] = useState([]);
-  const [products ,setProducts] = useState([]);
+  const [decodedToken, setDecodedToken] = useState([]);
+  const [products, setProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [discountCode, setDiscountCode] = useState("");
   const [error, setError] = useState("");
@@ -21,19 +22,20 @@ const Checkout = () => {
     houseno: "",
     area: "",
     landmark: "",
-    district: "",
-    state: "", 
-    pincode: "",
+    district: details.district,
+    state: details.state,
+    pincode: pincode,
   });
 
   const [currentAddress, setCurrentAddress] = useState({
     houseno: "Current House No",
     area: "Current Area",
     landmark: "Current Landmark",
-    district: "Current District",
-    state: "Current State",
-    pincode: "Current pincode",
+    district: details.district,
+    state: details.state,
+    pincode: pincode,
   });
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -47,10 +49,6 @@ const Checkout = () => {
     setCurrentAddress(address);
     setIsModalOpen(false);
   };
-
-
-
-
 
   const fetchSelectedItems = async () => {
     if (selectedItems.length === 0) {
@@ -148,100 +146,100 @@ const Checkout = () => {
         )}
       </div>
       <div className="all-body">
-      <div className="delivery-card-200">
-      <h2>
-           <strong>Deliver to:</strong>  <span>{currentAddress.houseno},{currentAddress.area}, {currentAddress.landmark}, {currentAddress.district}</span>{" "}
-          
+        <div className="delivery-card-200">
+          <h2>
+            <strong>Deliver to:</strong>  <span>{currentAddress.houseno},{currentAddress.area}, {currentAddress.landmark}, {currentAddress.district}</span>{" "}
+
           </h2>
-          <p class="address-200">{currentAddress.state},{currentAddress.pincode}</p>
+          <p class="address-200">{currentAddress.state}, {currentAddress.pincode}</p>
           <p class="note-200">
             Note: Address will be shared with your selected retailers
           </p>
-        <div className="change-link-200">
-          <a onClick={() => setIsModalOpen(true)}>Change Address</a>
+          <div className="change-link-200">
+            <a onClick={() => setIsModalOpen(true)}>Add Address</a>
+          </div>
         </div>
-      </div>
 
-      {isModalOpen && (
-  <div className="check-modal-overlay">
-    <div className="check-modal">
-      <h3 className="check-modal-title">Change Address</h3>
-      <div className="check-modal-body">
-        <label className="check-label">
-          House / Flat No:
-          <input
-            type="text"
-            name="houseno"
-            value={address.houseno}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-        <label className="check-label">
-          Area:
-          <input
-            type="text"
-            name="area"
-            value={address.area}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-        <label className="check-label">
-          Landmark:
-          <input
-            type="text"
-            name="landmark"
-            value={address.landmark}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-        <label className="check-label">
-          District:
-          <input
-            type="text"
-            name="district"
-            value={address.district}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-        <label className="check-label">
-          State:
-          <input
-            type="text"
-            name="state"
-            value={address.state}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-        <label className="check-label">
-          Pincode:
-          <input
-            type="number"
-            name="pincode"
-            value={address.pincode}
-            onChange={handleInputChange}
-            className="check-input"
-          />
-        </label>
-      </div>
-      <div className="check-modal-footer">
-        <button className="check-save-btn" onClick={handleSaveAddress}>
-          Save
-        </button>
-        <button
-          className="check-cancel-btn"
-          onClick={() => setIsModalOpen(false)}
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  </div>
-)}
+        {isModalOpen && (
+          <div className="check-modal-overlay">
+            <div className="check-modal">
+              <h3 className="check-modal-title">Change Address</h3>
+              <div className="check-modal-body">
+                <label className="check-label">
+                  House / Flat No:
+                  <input
+                    type="text"
+                    name="houseno"
+                    value={address.houseno}
+                    onChange={handleInputChange}
+                    className="check-input"
+                  />
+                </label>
+                <label className="check-label">
+                  Area:
+                  <input
+                    type="text"
+                    name="area"
+                    value={address.area}
+                    onChange={handleInputChange}
+                    className="check-input"
+                  />
+                </label>
+                <label className="check-label">
+                  Landmark:
+                  <input
+                    type="text"
+                    name="landmark"
+                    value={address.landmark}
+                    onChange={handleInputChange}
+                    className="check-input"
+                  />
+                </label>
+                <label className="check-label">
+                  District:
+                  <input
+                    type="text"
+                    name="district"
+                    value={address.district}
+                    className="check-input"
+                    readOnly
+                  />
+                </label>
+                <label className="check-label">
+                  State:
+                  <input
+                    type="text"
+                    name="state"
+                    value={address.state}
+                    readOnly
+                    className="check-input"
+                  />
+                </label>
+                <label className="check-label">
+                  Pincode:
+                  <input
+                    type="number"
+                    name="pincode"
+                    value={address.pincode}
+                    readOnly
+                    className="check-input"
+                  />
+                </label>
+              </div>
+              <div className="check-modal-footer">
+                <button className="check-save-btn" onClick={handleSaveAddress}>
+                  Save
+                </button>
+                <button
+                  className="check-cancel-btn"
+                  onClick={() => setIsModalOpen(false)}
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
 
 
@@ -284,7 +282,7 @@ const Checkout = () => {
               Billing address is same as shipping
             </label>
           </div>
-          <Link to="/payment" state={{ selectedItems: selectedItems, design: design, coupen: discountCode, pay_amount: total - discountAmount, amount: total , pincode : pincode , houseno : houseno , area : area }} class="pay-button-30">Pay &#8377; {total - discountAmount}</Link>
+          <Link to="/payment" state={{ selectedItems: selectedItems, design: design, coupen: discountCode, pay_amount: total - discountAmount, amount: total, address : address }} class="pay-button-30">Pay &#8377; {total - discountAmount}</Link>
           <div class="footer-30">
             Safe and Secure Payments. Easy returns. 100% Authentic products.
           </div>

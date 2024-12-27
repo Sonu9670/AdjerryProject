@@ -19,7 +19,7 @@ const Contactpage = () => {
           Just contact us 👋.
         </h1>
       </div>
-      <div className="contact-container">
+      <div className=" container contact-container">
         <div className="contactpage-left">
           <h2>AdJerry</h2>
           <p>
@@ -65,7 +65,7 @@ const Contactpage = () => {
               <FaPhone />
               <div className="emaiText">
                 <p>Phone</p>
-                <p>0987654321</p>
+                <p>8860422993</p>
               </div>
             </div>
           </div>

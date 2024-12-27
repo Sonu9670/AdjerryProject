@@ -9,6 +9,7 @@ const Payment = () => {
 
   const design = location.state?.design || {};
   const selectedItems = location.state?.selectedItems || [];
+  const address = location.state?.address || null;
   const amount = location.state?.amount || 0;
   const pay_amount = location.state?.pay_amount || 0;
   const coupen = location.state?.coupen || "";
@@ -26,6 +27,7 @@ const Payment = () => {
         amount,
         pay_amount,
         coupen,
+        address
       };
 
       try {

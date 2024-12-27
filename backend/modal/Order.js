@@ -3,19 +3,20 @@ const connection = require('../database/conn');
 const Orders = {};
 
 Orders.booking = (data, user_id, callback) => {
-    const { items, order_id, design_id, amount, pay_amount, coupen } = data;
+    const { items, order_id, design_id, amount, pay_amount, coupen , address } = data;
 
     const sql = `
         INSERT INTO orders 
-        (item, order_id, design_id, user_id, amount, pay_amount, coupen, created_at, updated_at) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
+        (item, order_id, design_id, user_id, amount, pay_amount, coupen, address ,created_at, updated_at) 
+        VALUES (?, ?, ?, ?, ?, ?, ? , ?, NOW(), NOW())
     `;
 
     // Convert `items` array to JSON string
     const itemJson = JSON.stringify(items);
+    const addressJson = JSON.stringify(address);
 
     // Parameters for the query
-    const values = [itemJson, order_id, design_id, user_id, amount, pay_amount, coupen];
+    const values = [itemJson, order_id, design_id, user_id, amount, pay_amount, coupen , addressJson];
 
     // Execute the query
     connection.query(sql, values, (error, results) => {
