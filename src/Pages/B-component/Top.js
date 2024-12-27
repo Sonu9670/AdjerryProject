@@ -17,16 +17,16 @@ const Top = () => {
                     <p>A detailed overview of the budget allocation and transaction history.</p>
                 </Link>
 
-                <div class="card">
+                
                     <Link to="/business/view" className='card'>
                         <div class="icon">
                             <span> <h3>Design Selection</h3></span>    <img src={Design} alt="Design Icon" />
                         </div>
                         <p>A gallery to view and select designs submitted by designers.</p>
                     </Link>
-                </div>
+                
 
-                <div class="card">
+             
                     <Link to="/uploadDesign" className='card'>
                         <div class="icon">
                             <span> <h3>Upload Design</h3></span>   <img src={Post} alt="Post Icon" />
@@ -34,7 +34,7 @@ const Top = () => {
 
                         <p>If you have already design for ads then upload it.</p>
                     </Link>
-                </div>
+               
             </div>
         </>
     )

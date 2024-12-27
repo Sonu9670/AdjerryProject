@@ -20,14 +20,14 @@ a {
     color: #e32c3a;
     text-decoration: none;
 }
-
-a:hover {
+ a:hover {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .card:hover {
     transform: scale(1.05);
+    color: rgb(0, 0, 0);
 }
 
 .icon {

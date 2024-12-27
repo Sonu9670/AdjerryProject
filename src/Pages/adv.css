@@ -39,7 +39,9 @@
 .bbttn:hover{
   background-color: #d28383;
 }
-
+.d-flex {
+  color:white;
+}
 /* Modal overlay */
 .modal-overlay-000 {
   position: fixed;
