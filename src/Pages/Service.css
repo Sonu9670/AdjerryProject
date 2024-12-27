@@ -248,6 +248,9 @@ background-color: whitesmoke;
   
 /* Media Query for max-width 1000px */
 @media screen and (max-width: 1000px) {
+  .service-9451{
+    height: auto;
+  }
     .service-header-9451 {
         flex-direction: column;
         padding: 15px;
@@ -299,6 +302,9 @@ background-color: whitesmoke;
   
   /* Media Query for max-width 750px */
   @media screen and (max-width: 750px) {
+    .service-9451{
+      height: auto;
+    }
     .header-img-8450 {
         max-width: 400px;
       }
@@ -338,6 +344,9 @@ background-color: whitesmoke;
   
   /* Media Query for max-width 370px */
   @media screen and (max-width: 370px) {
+    .service-9451{
+      height: auto;
+    }
     .service-header-9451 {
         padding: 10px;
       }
