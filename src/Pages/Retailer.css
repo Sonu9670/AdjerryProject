@@ -1,9 +1,8 @@
 .retailer-main0 {
     display: flex;
-  
     flex-direction: row;
     justify-content:space-around;
-    height: 900px;
+    /* height: 900px; */
     width: 100%;
     /* border: 2px solid blue; */
   }
@@ -14,8 +13,66 @@
     flex-direction: column;
     width:100%;
   }
- /* .retailer-main2{
+ .retailer-main2{
     display: flex;
     flex-direction: row;
     margin:30px;
-  } */
+  }
+
+  
+  @media screen and (max-width: 1000px) {
+    .retailer-main0 {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .retailer-main1 {
+      width: 100%;
+    }
+    .retailer-main2 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .retailer-main0 {
+      justify-content: center;
+    }
+  
+    .retailer-main1 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .retailer-main2 {
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .retailer-main0 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .retailer-main1 {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .retailer-main2 {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      margin: 5px 0;
+    }
+    
+  }
