@@ -396,3 +396,75 @@ button {
 .custom-next > h1 {
   color: #0b5258;
 }
+
+
+/* Medium screen (max-width: 1000px) */
+@media screen and (max-width: 1000px) {
+  .requirement-section-33 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .requirement-details-33,
+  .image-gallery-33 {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .items-33 {
+    gap: 15px;
+  }
+
+  .item-33 {
+    flex: 1 1 calc(33.33% - 15px);
+  }
+}
+
+/* Small screen (max-width: 750px) */
+@media screen and (max-width: 750px) {
+  .inventory-header-33 h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .requirement-details-33,
+  .image-gallery-33 {
+    width: 100%;
+  }
+
+  .item-33 {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .custom-chat-section {
+    padding: 10px;
+  }
+
+  .custom-chat-msg {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+/* Extra small screen (max-width: 370px) */
+@media screen and (max-width: 400px) {
+  .inventory-0-33{
+    padding: 0;
+  }
+  .inventory-header-33 h1 {
+    font-size: 1.2rem;
+  }
+
+  .item-33 {
+    flex: 1 1 100%;
+  }
+
+  .custom-chat-footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .custom-input-sec input {
+    width: 100%;
+  }
+}
