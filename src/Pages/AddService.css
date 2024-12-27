@@ -111,3 +111,11 @@
        width: 100%;
     }
   }
+  @media screen and (max-width: 300px) {
+    .add-box-7851 input{
+        width: 100%;
+     }
+     .add-box-7851 button{
+      width: 100%;
+   }
+   }
