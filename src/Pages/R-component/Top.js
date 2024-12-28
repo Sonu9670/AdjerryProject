@@ -17,16 +17,16 @@ const Top = () => {
                     <p>A detailed overview of the budget allocation and transaction history.</p>
                 </Link>
 
-                <div class="retail">
+                
                     <Link to="/business/view" className='retail'>
                         <div class="retail-icon">
                             <span> <h3>My orders</h3></span>    <img src={Design} alt="Design Icon" />
                         </div>
                         <p>A gallery to view and select designs submitted by designers.</p>
                     </Link>
-                </div>
+              
 
-                <div class="retail">
+                
                     <Link to="/retailer/my-services" className='retail'>
                         <div class="retail-icon">
                             <span> <h3>My services</h3></span>   <img src={Post} alt="Post Icon" />
@@ -34,7 +34,7 @@ const Top = () => {
 
                         <p>If you have already design for ads then upload it.</p>
                     </Link>
-                </div>
+                
             </div>
         </>
     )
