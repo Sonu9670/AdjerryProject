@@ -2,7 +2,7 @@
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    height: 2700px;
+    height: 3200px;
     background-image: 
     url('./Assests/abstract_green_1.png'), 
     url('./Assests/Greengroup.png'), 
@@ -192,10 +192,11 @@ background-color: whitesmoke;
 
 .categories-container {
     margin: 20px;
-    display: flex;
+    display:grid;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
+    height: 1800px; */
   }
   
   .category-section {
@@ -343,7 +344,7 @@ background-color: whitesmoke;
   }
   
   /* Media Query for max-width 370px */
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 450px) {
     .service-9451{
       height: auto;
     }
