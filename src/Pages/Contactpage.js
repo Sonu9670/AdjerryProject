@@ -29,15 +29,15 @@ const Contactpage = () => {
           <div className="compnyAddress">
             <div className="location">
               <FaLocationArrow />
-              <p>location</p>
+              <p>Ghaziabad,UttarPradesh</p>
             </div>
             <div className="location">
               <FaMailBulk />
-              <p>Email</p>
+              <p>team@adjerry.com</p>
             </div>
             <div className="location">
               <FaPhone />
-              <p>Phone number</p>
+              <p>@Softair</p>
             </div>
           </div>
 
@@ -58,14 +58,14 @@ const Contactpage = () => {
               <FaMailBulk />
               <div className="emaiText">
                 <p>Email</p>
-                <p>adjerry@gmail.com</p>
+                <p>team@adjerry.com</p>
               </div>
             </div>
             <div className="emailSection">
               <FaPhone />
               <div className="emaiText">
                 <p>Phone</p>
-                <p>8860422993</p>
+                <p>@Softair</p>
               </div>
             </div>
           </div>

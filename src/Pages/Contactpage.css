@@ -19,14 +19,14 @@
 	margin:2rem auto;
 	border-radius: 15px;
 	box-shadow: 5px 5px 10px rgb(172, 167, 167);
-	background-color: #f72558;
+	background-color: #d32f2f;
 	overflow: hidden;
 	font-family: Arial, sans-serif;
 }
 
 .contactpage-left {
 	/* flex: 1; */
-	background-color: #f72558;
+	background-color: #d32f2f;
 	color: white;
 	padding: 20px;
 	width: 30%;
@@ -113,7 +113,7 @@
 }
 
 .contact-right h2 span {
-	color: #f72558;
+	color: #d32f2f;
 }
 
 .contact-right form {
@@ -135,7 +135,7 @@ select {
 
 .contact-right form button {
 	padding: 10px;
-	background-color: #f72558;
+	/* background-color: #f72558; */
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -144,7 +144,7 @@ select {
 }
 
 .contact-right form button:hover {
-	background-color: #d01d4b;
+	background-color: #d32f2f;
 }
 
 
