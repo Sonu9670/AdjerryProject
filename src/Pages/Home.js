@@ -9,10 +9,7 @@ const Home = () => {
     <div>
       <div>
         <section className="sec-1">
-
-
           <h1>
-
             <span className="h1span">Advertise</span> Your Brand <span className="h1span">on</span> Everyday <br /><span className="h1span">Essentials!</span>
           </h1>
           <p>Reach Your Target Audience with eye-catching designs on disposables that stand out.
@@ -24,8 +21,6 @@ const Home = () => {
           <figure>
             <img src="/images/Vector 32 (1).png" width="100%" />
           </figure>
-
-
         </section>
         <figure className='heroBox'>
           <img src="/images/Hero section Image.png" className="hero" alt="image 5" />
