@@ -37,7 +37,7 @@ const Contactpage = () => {
             </div>
             <div className="location">
               <FaPhone />
-              <p>@Softair</p>
+              <p>7042584234</p>
             </div>
           </div>
 
@@ -65,7 +65,7 @@ const Contactpage = () => {
               <FaPhone />
               <div className="emaiText">
                 <p>Phone</p>
-                <p>@Softair</p>
+                <p>7042584234</p>
               </div>
             </div>
           </div>
